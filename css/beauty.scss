@@ -1,0 +1,40 @@
+@import "/common/css/base";
+body{
+  font-size: 0;
+}
+.page-content{
+  background: url("/images/beauty/bg.jpg") repeat;
+  background-size: rem(375px);
+}
+.head-img{
+  width:100%;
+}
+.head-button{
+  font-size: 0;
+  a{
+    cursor: pointer;
+    display: inline-block;
+    width: rem(145px);
+    height: rem(49.5px);
+    margin:0 rem(37.5px) 0 rem(25px);
+    background: url("/images/beauty/activity-join.png");
+    background-size: rem(145px);
+  }
+  a:last-child{
+    margin: 0;
+    background: url("/images/beauty/activity-detail.png");
+    background-size: rem(145px);
+  }
+}
+.rank{
+  margin-top: rem(32.5px);
+  width: 100%;
+}
+.list-item{
+  width: rem(330px);
+  height: 50px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: rem(2.5px) solid black;
+  border-radius: rem(5px);
+}

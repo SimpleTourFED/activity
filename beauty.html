@@ -7,15 +7,48 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="wap-font-scale" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/common/css/base.scss" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="/css/beauty.scss?__inline">
 </head>
 <body>
 <div class="page-group">
     <div class="page page-current">
         <div class="page-content">
-
+            <img class="head-img" src="/images/beauty/header.png">
+            <div class="head-button">
+                <a href="#">我要参加</a>
+                <a href="#">活动详情</a>
+            </div>
+            <img class="rank" src="/images/beauty/rank.png">
+            <div class="list">
+                <div class="list-item"></div>
+            </div>
         </div>
     </div>
 </div>
+<script src="/common/js/zepto.min.js"></script>
+<script>
+    (function (doc, win) {
+
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    var style;
+                    if (style = document.getElementById("forhtml")) {
+                        style.parentNode.removeChild(style);
+                    }
+                    style = document.createElement("style");
+                    style.id = "forhtml";
+                    document.head.appendChild(style);
+                    style.appendChild(document.createTextNode("html{font-size:" + 20 * (clientWidth / 375) + "px !important;}"));
+                };
+        recalc();
+        doc.getElementsByClassName('page-group')[0].style.visibility = 'visible';
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
 </body>
 </html>
