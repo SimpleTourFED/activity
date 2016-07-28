@@ -68,6 +68,7 @@
     </div>
 </div>
 <script src="/common/js/zepto.min.js"></script>
+<script src="/common/js/base.js"></script>
 <script>
     (function (doc, win) {
 
@@ -91,6 +92,7 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+    $.confirm({title:'confirmconfirmconfirm',detail:false,yes:'X'})
 </script>
 </body>
 </html>
