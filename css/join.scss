@@ -24,7 +24,7 @@ body{
     height: rem(185px);
     border: rem(2.5px) solid black;
     border-radius: rem(5px);
-    background: url(/images/join/defalut-photo.png) no-repeat center ;
+    background: url(/images/beauty/defalut-photo.png) no-repeat center ;
     background-size: 25%;
     background-color: #fff;
   }
@@ -44,6 +44,10 @@ body{
       width: rem(50px);
       height: 100%;
     }
+    span {
+      float: left;
+      margin-left: rem(10px);
+    }
     .cutline {
       margin-top: rem(7px);
       float: left;
@@ -59,6 +63,32 @@ body{
       height: 100%;
       text-indent: rem(10px);
     }
+    .radio-gp {
+      float: left;
+      width: rem(40px);
+      height: 100%;
+      padding-top: rem(4px);
+      .radio {
+        display: inline-block;
+        width: rem(18px);
+        height: rem(18px);
+        border: 1px solid #000;
+        border-radius: rem(20px);
+        text-align: center;
+        &.choose {
+          span {
+            display: inline-block;
+            margin: .05rem;;
+            width: rem(14px);
+            height: rem(14px);
+            border: 1px solid #000;
+            border-radius: rem(15px);
+            background-color: #feff01;
+
+          }
+        }
+      }
+    }
   }
   textarea {
     width: 100%;
@@ -73,7 +103,10 @@ body{
   width: rem(150px);
   height: rem(50px);
   margin: rem(25px) auto;
-  img{
-    width: 100%;
+  background: url(/images/beauty/enlist.png) no-repeat center;
+  background-size: contain;
+  &.disabled {
+    background: url(/images/beauty/enlist-disabled.png) no-repeat center;
+    background-size: contain;
   }
 }
