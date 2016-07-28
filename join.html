@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>简途旅行</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/join.scss?__inline">
+</head>
+<body>
+<div class="page-group" style="visibility: hidden">
+    <div class="page page-current">
+        <div class="page-content">
+            <img class="head-img" src="/images/join/join-header-img.png" alt="">
+            <div class="gp">
+                <h5>1. 上传照片</h5>
+                <div class="photo-wrapper">
+                </div>
+            </div>
+            <div class="gp">
+                <h5>2. 填写你的信息</h5>
+                <div class="input-group">
+                    <label for="">昵称</label>
+                    <div class="cutline"></div>
+                    <input type="text" name="nickName" placeholder="宝宝我们怎么称呼你?">
+                </div>
+                <div class="input-group">
+                    <label for="">性别</label>
+                    <div class="cutline"></div>
+                    <div class="radio-gp">
+                        男 <div class="radio" data-value="male"><span></span></div>
+                        女 <div class="radio" data-value="female"><span></span></div>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="">电话</label>
+                    <div class="cutline"></div>
+                    <input type="number" name="mobile" pattern="\d*" placeholder="得奖了好联系你">
+                </div>
+            </div>
+            <div class="gp">
+                <h5>3. 参赛宣言</h5>
+                <textarea placeholder="不管你是谁,简途陪你在路上" name="declaration" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="enlist">
+                <img src="/images/join/enlist.png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/common/js/zepto.min.js"></script>
+<script>
+    (function (doc, win) {
+
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    var style;
+                    if (style = document.getElementById("forhtml")) {
+                        style.parentNode.removeChild(style);
+                    }
+                    style = document.createElement("style");
+                    style.id = "forhtml";
+                    document.head.appendChild(style);
+                    style.appendChild(document.createTextNode("html{font-size:" + 20 * (clientWidth / 375) + "px !important;}"));
+                };
+        recalc();
+        doc.getElementsByClassName('page-group')[0].style.visibility = 'visible';
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>
