@@ -102,3 +102,29 @@ body{
     }
   }
 }
+.confirm-content{
+  width: rem(255px);
+  height:rem(255px);
+  border-radius: rem(255px);
+  background: url("/images/beauty/confirm_bg.png");
+  background-size: rem(255px);
+  position: relative;
+  .confirm-inner{
+    padding: 0 rem(25px);
+  }
+  .confirm-buttons{
+    position: absolute;
+    border: rem(1px) solid black;
+    width: rem(35px);
+    height:rem(35px);
+    border-radius: rem(100px);
+    background-color: white;
+    color:black;
+    left:5.7rem;
+    top:-.8rem;
+    span{
+      line-height: rem(35px);
+      height:rem(35px);
+    }
+  }
+}
