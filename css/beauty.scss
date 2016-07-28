@@ -30,11 +30,75 @@ body{
   margin-top: rem(32.5px);
   width: 100%;
 }
+.list {
+  padding-bottom: rem(32px);
+}
 .list-item{
+  position: relative;
   width: rem(330px);
-  height: 50px;
-  margin: 0 auto;
+  margin: rem(20px) auto;
+  background-color: #fff;
   box-sizing: border-box;
   border: rem(2.5px) solid black;
   border-radius: rem(5px);
+  padding: rem(8px);
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  .player-avatar {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
+  p {
+    padding: rem(10px) 0;
+    color: #000;
+    font-size: rem(14px);
+    border-bottom: 1px solid #bdbdbd;
+    word-break: break-all;
+    line-height: 1rem;
+  }
+  .star-count {
+    margin-top: rem(10px);
+    height: rem(30px);
+    line-height: rem(30px);
+    color: #000;
+    font-size: rem(16px);
+    .player-rank {
+      float: right;
+      color: #000;
+      font-size: rem(16px);
+      img {
+        vertical-align: text-bottom;
+        width: rem(23px);
+        height: rem(23px);
+      }
+    }
+  }
+  .btn-group {
+    height: rem(50px);
+    button {
+      text-decoration: dashed;
+      margin: rem(14px);
+      border: none;
+      width: rem(120px);
+      height: rem(32px);
+      float: left;
+      font-size: rem(18px);
+      color: #000;
+      background: url(/images/beauty/btn-bg.png) no-repeat center;
+      background-size: contain;
+      font-weight: 500;
+    }
+  }
+  .border-bottom {
+    position: absolute;
+    left: rem(-2.5px);
+    right: 0;
+    bottom: rem(-10px);
+    width: rem(330px);
+    img {
+      width: 100%;
+    }
+  }
 }
