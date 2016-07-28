@@ -112,6 +112,18 @@ body{
   .confirm-inner{
     padding: 0 rem(25px);
   }
+  .confirm-title{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 100%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    color: white;
+    font-size: rem(24px);
+    word-break: break-all;
+    padding: 0 rem(24px);
+  }
   .confirm-buttons{
     position: absolute;
     border: rem(1px) solid black;
