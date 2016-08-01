@@ -80,6 +80,18 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+    $(document).ready(function() {
+        // 点击赞一个
+        $('.star-btn').tap(function(e) {
+            var $this = $(this);
+            $this.addClass('disabled');
+        })
+        // 点击提交
+        $('.submit').tap(function() {
+            var $this = $(this);
+            $this.addClass('disabled');
+        })
+    });
 </script>
 </body>
 </html>

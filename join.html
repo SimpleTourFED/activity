@@ -78,6 +78,21 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+    $(document).ready(function() {
+        $(".radio-gp").tap(function(e) {
+            $(".radio-gp").find('.radio').removeClass("choose");
+            $(this).find('.radio').addClass("choose");
+        })
+
+        //  提交按钮
+        $('.enlist').click(function() {
+            var $this = $(this);
+            var nickName = $('input[name=nickName]').val();
+            var mobile = $('input[name=mobile]').val();
+            var sex = $('.radio.choose').attr('data-value');
+            $this.addClass('disabled')
+        });
+    })
 </script>
 </body>
 </html>
