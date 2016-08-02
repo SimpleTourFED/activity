@@ -47,12 +47,15 @@ img{
 .content{
   width: 100%;
   position: absolute;
-  top: rem(410px);
+  top: rem(406px);
   .errorTip{
     font-size: rem(14px);
     text-align: center;
     padding: rem(8px);
     color: #222;
+    &.hide{
+      visibility: hidden;
+    }
   }
   .input_group{
     width: rem(280px);
@@ -88,12 +91,15 @@ img{
       color: #fff;
       vertical-align: middle;
       margin-top: rem(-2px);
+      &.disabled{
+        background-color:#e3e3e3
+      }
     }
   }
 }
 .rule-wrap{
   width: rem(306px);
-  margin: rem(40px) auto 0;
+  margin: rem(42px) auto 0;
   background-color: #fff;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
