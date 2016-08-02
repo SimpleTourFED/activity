@@ -4,37 +4,25 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>简途旅行</title>
-    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="telephone=no"/>
     <meta name="wap-font-scale" content="no">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="/css/fetch.scss?__inline">
+    <link rel="stylesheet" href="/css/toUse.scss?__inline">
 </head>
 <body>
-<div class="all_images">
-    <img class="top_bg" src="/images/coupon/top_bg.png" alt=""/>
-    <img class="center_bg" src="/images/coupon/center_bg.png" alt=""/>
-    <img class="bottom_bg" src="/images/coupon/bottom_bg.png" alt=""/>
-    <div class="rule-wrap">
-        <img class="rule_title" src="/images/coupon/rule.png" alt=""/>
-        <div class="rule">
-            <p>1、输入手机号，点击领取，即可领取225元现金优惠！</p>
-            <p>2、具体线路优惠信息参照商品详情页；</p>
-            <p>3、使用抵用券和领取抵用券的手机号码需一致；</p>
-            <p>4、优惠券仅简途APP可用；</p>
-            <p>5、优惠券仅对简途指定商品可用，不予折现；</p>
-            <p>6、在简途APP菜单栏中，点击优惠券，可查看所有优惠券信息；</p>
-            <p>7、在付款界面，选择获得的优惠券即可享受优惠；</p>
-            <p>8、同一商品只可使用一张优惠券；</p>
-        </div>
+<div class="main-wrap">
+    <div class="all_images">
+        <img class="top_bg" src="/images/coupon/top_bg.png" alt=""/>
+        <img class="center_bg" src="/images/coupon/center_bg.png" alt=""/>
+        <img class="bottom_bg_text" src="/images/coupon/bottom_bg_text.png" alt=""/>
     </div>
-    <img class="footer_logo" src="/images/coupon/logo.png" alt=""/>
+    <div class="content">
+        <a href="#">点击一下,马上用券</a>
+        <div class="tip">有福同享!马上告诉好基友好丽友~</div>
+    </div>
 </div>
-<div class="content">
-    <div class="errorTip">*对不起,您输入的手机号码有误</div>
-    <div class="input_group">
-        <input type="text" name="mobile" placeholder="请输入您的电话号"/>
-        <a href="#">领取</a>
-    </div>
+<div class="footer">
+    <img class="footer_logo" src="/images/coupon/logo.png" alt=""/>
 </div>
 <script src="/common/js/zepto.min.js"></script>
 <script>
@@ -59,7 +47,6 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
-    
 </script>
 </body>
 </html>
