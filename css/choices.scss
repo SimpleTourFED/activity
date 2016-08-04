@@ -1,0 +1,87 @@
+@import "/common/css/base";
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+@mixin linear-gradient() {
+  background-image: -webkit-linear-gradient(top,
+          #72c4af 0%,
+          //#dfe1b8 35%,
+          #dfe1b8 60%,
+          #6bb29e 100%
+  );
+  //background-image: -moz-linear-gradient(top,
+  //        rgba(99, 173, 241, 1) 0px,
+  //        rgba(0, 255, 255, 0) 250px
+  //);
+  //background-image: -o-linear-gradient(top,
+  //        rgba(99, 173, 241, 1) 0px,
+  //        rgba(0, 255, 255, 0) 250px
+  //);
+  //background-image: -ms-linear-gradient(top,
+  //        rgba(99, 173, 241, 1) 0%,
+  //        rgba(0, 255, 255, 0) 250px
+  //); /* IE10+ */
+  //filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#63adf1', endColorstr='#0000ffff', GradientType=0); /* IE6-9 */
+  //background-image: linear-gradient(top,
+  //        rgba(99, 173, 241, 1) 0%,
+  //        rgba(0, 255, 255, 0) 250px
+  //); /* W3C */
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  //background-color: #91d2f9;
+}
+
+img {
+  width: 100%;
+  border: none;
+  vertical-align: middle;
+  display: block;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  @include linear-gradient();
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  opacity: 1;
+  transition: opacity .3s linear;
+  -webkit-transition: opacity .3s linear;
+  .progress-content {
+    width: 540/40rem;
+    margin: 0 auto;
+    padding-top: 350/40rem;
+    text-align: center;
+    img {
+      width: 86/40rem;
+    }
+    .progressBar {
+      margin: 1.5rem auto;
+      width: 400/40rem;
+      height: 10/40rem;
+      border: 1px solid #ffffff;
+      .bar {
+        width: 0rem;
+        height: 10/40rem;
+        background-color: #fff;
+        transition: width .5s linear;
+        -webkit-transition: width .5s linear;
+      }
+    }
+  }
+  &.fadeOut {
+    opacity: 0;
+  }
+}
+
+.main {
+
+}

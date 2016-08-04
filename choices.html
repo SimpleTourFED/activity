@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>简途旅行</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/css/choices.scss?__inline">
+</head>
+<body>
+<div class="progress">
+    <div class="progress-content">
+        <!--<div class="progressBar">-->
+            <!--<div class="bar"></div>-->
+        <!--</div>-->
+    </div>
+</div>
+<!--<div class="main">-->
+    <!--<div class="bgLayer">-->
+        <!--<img src="/images/represent/choice_bg@2x.png" alt="背景图"/>-->
+    <!--</div>-->
+<!--</div>-->
+<script type="text/javascript"  src="/common/js/zepto.min.js"></script>
+<script type="text/javascript"  src="/common/js/base.js"></script>
+<script type="text/javascript" src="/common/js/imgLoader.js"></script>
+<script>
+//    var loader = new imgLoader({
+//        backgroundResources:[
+//            "/images/represent/choice_bg@2x.jpg"
+//        ],
+//        onStart : function(total){
+//            $('.bottom-bar').width('8.7rem');
+//        },
+//        onProgress : function(current,total){
+//            var percent = current/total;
+//            $('.bar').width(10*percent+'rem');
+//            $('.nums').html(Math.round(percent*100)+'%');
+//        },
+//        onComplete: function() {
+//            setTimeout(function() {
+//                $('.progress').addClass('fadeOut');
+//            },500);
+//            setTimeout(function() {
+//                $('.progress').remove();
+//            },800);
+//        }
+//    });
+//    loader.start();
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    // 针对uc横竖屏rem html没有重绘的问题
+                    var style;
+                    if (style = document.getElementById("forhtml")) {
+                        style.parentNode.removeChild(style);
+                    }
+                    style = document.createElement("style");
+                    style.id = "forhtml";
+                    document.head.appendChild(style);
+                    style.appendChild(document.createTextNode("html{font-size:" + 20 * (clientWidth / 320) + "px !important;}"));
+                };
+        recalc();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
+</body>
+</html>
