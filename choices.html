@@ -136,7 +136,7 @@
         <div class="footer">
             <form autocomplete="off" action="/" method="POST">
                 <input name="weight" type="hidden" value="0"/>
-               <a href="/" class="submit">看看我的川范指数</a>
+               <a class="submit">看看我的川范指数</a>
             </form>
         </div>
     </div>
@@ -147,7 +147,11 @@
 <script>
         var loader = new imgLoader({
             backgroundResources:[
-                "/images/represent/choice_bg@2x.png"
+                "/images/represent/choice_bg@2x.png",
+                "/images/represent/jzg.png",
+                "/images/represent/dcyd.png",
+                "/images/represent/tgl.png",
+                "/images/represent/dysh.png",
             ],
             onStart : function(total){
             },
@@ -190,6 +194,7 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+        var obj = {a:[30,28,26],b:[36,34],c:[24,22],d:[20],e: [16.14]};
     $('.support').on('click',function(e){
         $(this).parents('.section').find('.support').removeClass('selected');
         $(this).addClass('selected');
@@ -199,14 +204,22 @@
         e.stopPropagation();
         var $supports = $('.support.selected');
         if($supports.length==5){
-            var weight = 0;
+            var weight = 0,grade;
             $supports.each(function(index,ele){
                 weight += parseInt($(ele).attr('data-weight'));
             });
-            $('input[name=weight]').val(weight);
-            $('.footer form').submit();
+            for(var key in obj){
+                $.each(obj[key],function(i,value){
+                    if(value==weight){
+                        grade = key;
+                       return;
+                    }
+                });
+            }
+//            $('input[name=weight]').val(weight);
+            $('input[name=weight]').val(grade);
             alert(weight);
-            $
+//            $('.footer form').submit();
         }else{
             $.alert({
                 msg: '还有选择题没回答'
