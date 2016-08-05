@@ -32,7 +32,7 @@
                     <img src="/images/represent/jzg.png" class="九寨沟"/>
                     <span>哦~神奇的天堂~</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="8">支&nbsp;&nbsp;持</div>
             </div>
             <div class="right">
                 <div class="content">
@@ -42,7 +42,7 @@
                     <img src="/images/represent/dcyd.png" class="稻城亚丁"/>
                     <span>人烟之外、仙境之里</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="2">支&nbsp;&nbsp;持</div>
             </div>
         </div>
         <div class="section second">
@@ -54,7 +54,7 @@
                     <img src="/images/represent/tgl.png" class="太古里"/>
                     <span>春熙路已out，谁不承认谁不客观</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="8">支&nbsp;&nbsp;持</div>
             </div>
             <div class="right">
                 <div class="content">
@@ -64,7 +64,7 @@
                     <img src="/images/represent/dysh.png" class="大英死海"/>
                     <span>不穿衣服的美女这儿看噻</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="2">支&nbsp;&nbsp;持</div>
             </div>
         </div>
         <div class="section third">
@@ -76,7 +76,7 @@
                     <img src="/images/represent/jsh.png" class="金丝猴"/>
                     <span>猴哥我要给你生猴子</span>
                 </div>
-                <div class="support selected">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="1">支&nbsp;&nbsp;持</div>
             </div>
             <div class="right">
                 <div class="content">
@@ -86,7 +86,7 @@
                     <img src="/images/represent/dxm.png" class="大熊猫"/>
                     <span>伦家才是国民宝宝</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="9">支&nbsp;&nbsp;持</div>
             </div>
         </div>
         <div class="section fourth">
@@ -98,7 +98,7 @@
                     <img src="/images/represent/djy.png" class="都江堰"/>
                     <span>“天府之国”的“守护神”</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="5">支&nbsp;&nbsp;持</div>
             </div>
             <div class="right">
                 <div class="content">
@@ -108,7 +108,7 @@
                     <img src="/images/represent/lsdf.png" class="乐山大佛"/>
                     <span>镇佑四川，天下太平</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="5">支&nbsp;&nbsp;持</div>
             </div>
         </div>
         <div class="section fifth">
@@ -120,7 +120,7 @@
                     <img src="/images/represent/bfx.png" class="碧峰峡"/>
                     <span>熊猫都在这避暑，安逸！</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="4">支&nbsp;&nbsp;持</div>
             </div>
             <div class="right">
                 <div class="content">
@@ -130,11 +130,12 @@
                     <img src="/images/represent/qcs.png" class="青城山"/>
                     <span>空调都是摆设的榻榻</span>
                 </div>
-                <div class="support">支&nbsp;&nbsp;持</div>
+                <div class="support" data-weight="6">支&nbsp;&nbsp;持</div>
             </div>
         </div>
         <div class="footer">
-            <form name="" action="" method="">
+            <form autocomplete="off" action="/" method="POST">
+                <input name="weight" type="hidden" value="0"/>
                <a href="/" class="submit">看看我的川范指数</a>
             </form>
         </div>
@@ -153,12 +154,12 @@
             onProgress : function(current,total){
                 var percent = current/total;
                 $('.bar').width(11.4*percent+'rem');
-//                if(percent==0.25 || percent==1){
-//                    $('.bar .bus').css('right','0');
-//                }
+                if(percent==0.25 || percent==1){
+                    $('.bar .bus').css('right','0');
+                }
             },
             onComplete: function() {
-                $('.bar .bus').css('right','0');
+//                $('.bar .bus').css('right','0');
                 setTimeout(function() {
                     $('.progress').addClass('fadeOut');
                 },500);
@@ -189,6 +190,29 @@
         win.addEventListener(resizeEvt, recalc, false);
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
+    $('.support').on('click',function(e){
+        $(this).parents('.section').find('.support').removeClass('selected');
+        $(this).addClass('selected');
+    });
+    $('.submit').click(function(e){
+        e.preventDefault();
+        e.stopPropagation();
+        var $supports = $('.support.selected');
+        if($supports.length==5){
+            var weight = 0;
+            $supports.each(function(index,ele){
+                weight += parseInt($(ele).attr('data-weight'));
+            });
+            $('input[name=weight]').val(weight);
+            $('.footer form').submit();
+            alert(weight);
+            $
+        }else{
+            $.alert({
+                msg: '还有选择题没回答'
+            });
+        }
+    });
 </script>
 </body>
 </html>
