@@ -114,11 +114,10 @@
     $(document).ready(function() {
         var startY,endY,$index;
         var $wrap = $('.screen-wrap');
-        $('.downArrow').on('click',function(e){
-            var $this = $(this);
+        $('.downArrow').on('tap',function(e){
             e.preventDefault();
             e.stopPropagation();
-            slideUp($this.parents('.screen').index());
+            slideUp($(this).parents('.screen').index());
         });
         function translate0(){
             $wrap.css({
@@ -188,10 +187,14 @@
             e.stopPropagation();
             endY = e.changedTouches[0].clientY;
             $index = $(e.target).parents('.screen').index();
-            if(endY-startY<0){
+            if($(e.target).hasClass('downArrow')){
                 slideUp($index);
-            }else if(endY-startY>0){
-                slideDown($index);
+            }else{
+                if(endY-startY<0){
+                    slideUp($index);
+                }else if(endY-startY>0){
+                    slideDown($index);
+                }
             }
         });
     });
