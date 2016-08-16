@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>简途旅行</title>
     <meta name="format-detection" content="telephone=no"/>
-    <meta name="wap-font-scale" content="no">
+    <!--<meta name="wap-font-scale" content="no">-->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/css/appdownload.scss?__inline">
 </head>
@@ -92,7 +92,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="/common/js/new-zepto.min.js"></script>
+<script type="text/javascript" src="/common/js/zepto.min.js"></script>
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
@@ -124,9 +124,6 @@
             e.stopPropagation();
             slideUp($this.parents('.screen').index());
         });
-        function removeClasses(){
-            $wrap.removeClass('slideUp').removeClass('slideUp1').removeClass('slideUp2').removeClass('slideUp3');
-        }
         function translate0(){
             $wrap.css({
                 'transform': 'translate(0,0)',
@@ -186,13 +183,15 @@
             }
         }
         $(document.body).bind('touchstart',function(e){
+            e.preventDefault();
+            e.stopPropagation();
             startY = e.changedTouches[0].clientY;
         });
         $(document.body).bind('touchend',function(e){
+            e.preventDefault();
+            e.stopPropagation();
             endY = e.changedTouches[0].clientY;
             $index = $(e.target).parents('.screen').index();
-//            $('body').scrollTop(0);
-//            $wrap.scrollTop(0);
             if(endY-startY<0){
                 slideUp($index);
             }else if(endY-startY>0){
