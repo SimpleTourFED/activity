@@ -163,38 +163,10 @@ img {
   width: 100%;
   height: 100%;
   transition: transform 500ms ease-in-out;
-  //-moz-transition: -moz-transform 500ms ease-in-out;/* Firefox 4 */
+  -moz-transition: -moz-transform 500ms ease-in-out;/* Firefox 4 */
   -webkit-transition: -webkit-transform 500ms ease-in-out; /* Safari 和 Chrome */
-  //-o-transition: -o-transform 500ms ease-in-out;/* Opera */
-  //-ms-transition: -ms-transform 500ms ease-in-out;/* IE 9 */
-  &.slideUp{
-    transform: translate(0,0);
-    -ms-transform: translate(0,0); 	/* IE 9 */
-    -moz-transform: translate(0,0); 	/* Firefox */
-    -webkit-transform: translate(0,0); /* Safari 和 Chrome */
-    -o-transform: translate(0,0); /* Opera */
-  }
-  &.slideUp1{
-    transform: translate(0,-100%);
-    -ms-transform: translate(0,-100%); 	/* IE 9 */
-    -moz-transform: translate(0,-100%); 	/* Firefox */
-    -webkit-transform: translate(0,-100%); /* Safari 和 Chrome */
-    -o-transform: translate(0,-100%);
-  }
-  &.slideUp2{
-    transform: translate(0,-200%);
-    -ms-transform: translate(0,-200%); 	/* IE 9 */
-    -moz-transform: translate(0,-200%); 	/* Firefox */
-    -webkit-transform: translate(0,-200%); /* Safari 和 Chrome */
-    -o-transform: translate(0,-200%);
-  }
-  &.slideUp3{
-    transform: translate(0,-300%);
-    -ms-transform: translate(0,-300%); 	/* IE 9 */
-    -moz-transform: translate(0,-300%); 	/* Firefox */
-    -webkit-transform: translate(0,-300%); /* Safari 和 Chrome */
-    -o-transform: translate(0,-300%);
-  }
+  -o-transition: -o-transform 500ms ease-in-out;/* Opera */
+  -ms-transition: -ms-transform 500ms ease-in-out;/* IE 9 */
 }
 .one-page,.two-page,.three-page,.four-page{
   width: 100%;
@@ -327,6 +299,7 @@ img {
       a{
         background-color: #e61e4a;
         color: #fff;
+        margin-bottom: rem(14px);
       }
     }
   }
@@ -397,6 +370,9 @@ img {
         padding-left: rem(33px);
         margin: 0 auto;
       }
+    }
+    .download-wrap{
+     margin-bottom: rem(25px);
     }
   }
 }
