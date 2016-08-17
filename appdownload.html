@@ -119,10 +119,13 @@
             e.stopPropagation();
             slideUp($(this).parents('.screen').index());
         });
+        $('.download-wrap a').on('tap',function(event){
+            location.href = $(this).attr('href');
+        });
         function translate(y){
             $wrap.css({
-                'transform': 'translate(0,-'+y*100%+')',
-                '-webkit-transform': 'translate(0,-'+y*100%+')'
+                'transform': 'translate(0,-'+y*100+'%)',
+                '-webkit-transform': 'translate(0,-'+y*100+'%)'
             });
         }
         function slideUp(index){
