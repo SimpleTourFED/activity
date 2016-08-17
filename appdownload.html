@@ -119,62 +119,20 @@
             e.stopPropagation();
             slideUp($(this).parents('.screen').index());
         });
-        function translate0(){
+        function translate(y){
             $wrap.css({
-                'transform': 'translate(0,0)',
-                '-webkit-transform': 'translate(0,0)'
-            });
-        }
-        function translate1(){
-            $wrap.css({
-                'transform': 'translate(0,-100%)',
-                '-webkit-transform': 'translate(0,-100%)'
-            });
-        }
-        function translate2(){
-            $wrap.css({
-                'transform': 'translate(0,-200%)',
-                '-webkit-transform': 'translate(0,-200%)'
-            });
-        }
-        function translate3(){
-            $wrap.css({
-                'transform': 'translate(0,-300%)',
-                '-webkit-transform': 'translate(0,-300%)'
+                'transform': 'translate(0,-'+y*100%+')',
+                '-webkit-transform': 'translate(0,-'+y*100%+')'
             });
         }
         function slideUp(index){
-            switch(index){
-                case 0: {
-                    translate1();
-                    break;
-                }
-                case 1:{
-                    translate2();
-                    break;
-                }
-                case 2:{
-                    translate3();
-                    break;
-                }
-                case 3: break;
+            if(index<3){
+                translate(index+1);
             }
         }
         function slideDown(index){
-            switch(index){
-                case 0: break;
-                case 1:{
-                    translate0();
-                    break;
-                }
-                case 2:{
-                    translate1();
-                    break;
-                }
-                case 3: {
-                    translate2();
-                    break;
-                }
+            if(index>0){
+                translate(index-1);
             }
         }
         $(document.body).bind('touchstart',function(e){
