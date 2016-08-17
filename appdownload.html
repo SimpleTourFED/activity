@@ -112,7 +112,7 @@
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
     $(document).ready(function() {
-        var startY,endY,$index;
+        var startY,endY,offset,$index;
         var $wrap = $('.screen-wrap');
         $('.downArrow').on('tap',function(e){
             e.preventDefault();
@@ -187,12 +187,13 @@
             e.stopPropagation();
             endY = e.changedTouches[0].clientY;
             $index = $(e.target).parents('.screen').index();
+            offset = endY-startY;
             if($(e.target).hasClass('downArrow')){
                 slideUp($index);
             }else{
-                if(endY-startY<0){
+                if(offset<0 && offset<-10){
                     slideUp($index);
-                }else if(endY-startY>0){
+                }else if(offset>0 && offset>10){
                     slideDown($index);
                 }
             }
