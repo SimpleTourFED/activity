@@ -52,46 +52,46 @@
 }
 
 @mixin linear-gradient-red() {
-  background-image: -webkit-linear-gradient(left,
+  background-image: -webkit-linear-gradient(top,
           #f84458 0%,
           #fa465c 100%
   );
-  background-image: -moz-linear-gradient(left,
+  background-image: -moz-linear-gradient(top,
           #f84458 0%,
           #fa465c 100%
   );
-  background-image: -o-linear-gradient(left,
+  background-image: -o-linear-gradient(top,
           #f84458 0%,
           #fa465c 100%
   );
-  background-image: -ms-linear-gradient(left,
+  background-image: -ms-linear-gradient(top,
           #f84458 0%,
           #fa465c 100%
   ); /* IE10+ */
-  background-image: linear-gradient(left,
+  background-image: linear-gradient(top,
           #f84458 0%,
           #fa465c 100%
   ); /* W3C */
 }
 @mixin linear-gradient-yellow() {
   background-image: -webkit-linear-gradient(top,
-          #fba669 0%,
+          #fcb56c 0%,
           #fa9365 100%
   );
   background-image: -moz-linear-gradient(top,
-          #fba669 0%,
+          #fcb56c 0%,
           #fa9365 100%
   );
   background-image: -o-linear-gradient(top,
-          #fba669 0%,
+          #fcb56c 0%,
           #fa9365 100%
   );
   background-image: -ms-linear-gradient(top,
-          #fba669 0%,
+          #fcb56c 0%,
           #fa9365 100%
   ); /* IE10+ */
   background-image: linear-gradient(top,
-          #fba669 0%,
+          #fcb56c 0%,
           #fa9365 100%
   ); /* W3C */
 }
@@ -163,38 +163,10 @@ img {
   width: 100%;
   height: 100%;
   transition: transform 500ms ease-in-out;
-  //-moz-transition: -moz-transform 500ms ease-in-out;/* Firefox 4 */
+  -moz-transition: -moz-transform 500ms ease-in-out;/* Firefox 4 */
   -webkit-transition: -webkit-transform 500ms ease-in-out; /* Safari 和 Chrome */
-  //-o-transition: -o-transform 500ms ease-in-out;/* Opera */
-  //-ms-transition: -ms-transform 500ms ease-in-out;/* IE 9 */
-  &.slideUp{
-    transform: translate(0,0);
-    -ms-transform: translate(0,0); 	/* IE 9 */
-    -moz-transform: translate(0,0); 	/* Firefox */
-    -webkit-transform: translate(0,0); /* Safari 和 Chrome */
-    -o-transform: translate(0,0); /* Opera */
-  }
-  &.slideUp1{
-    transform: translate(0,-100%);
-    -ms-transform: translate(0,-100%); 	/* IE 9 */
-    -moz-transform: translate(0,-100%); 	/* Firefox */
-    -webkit-transform: translate(0,-100%); /* Safari 和 Chrome */
-    -o-transform: translate(0,-100%);
-  }
-  &.slideUp2{
-    transform: translate(0,-200%);
-    -ms-transform: translate(0,-200%); 	/* IE 9 */
-    -moz-transform: translate(0,-200%); 	/* Firefox */
-    -webkit-transform: translate(0,-200%); /* Safari 和 Chrome */
-    -o-transform: translate(0,-200%);
-  }
-  &.slideUp3{
-    transform: translate(0,-300%);
-    -ms-transform: translate(0,-300%); 	/* IE 9 */
-    -moz-transform: translate(0,-300%); 	/* Firefox */
-    -webkit-transform: translate(0,-300%); /* Safari 和 Chrome */
-    -o-transform: translate(0,-300%);
-  }
+  -o-transition: -o-transform 500ms ease-in-out;/* Opera */
+  -ms-transition: -ms-transform 500ms ease-in-out;/* IE 9 */
 }
 .one-page,.two-page,.three-page,.four-page{
   width: 100%;
@@ -210,7 +182,7 @@ img {
       position: absolute;
       bottom: 0;
       left: 0;
-      z-index: 500;
+      z-index: 1000;
       a{
         width: rem(200px);
         height: rem(45px);
@@ -254,6 +226,7 @@ img {
       text-align: center;
       img.logo{
         width: rem(188px);
+        min-height: rem(166.56px);
         display: inline-block;
       }
       img.redline{
@@ -286,7 +259,7 @@ img {
   .main{
     .up {
       width: 100%;
-      padding: 12% 0;
+      padding: 10.5% 0;
       text-align: center;
       .slogan{
         color: #774e25;
@@ -316,7 +289,7 @@ img {
       bottom: 0;
       left: 0;
       right: 0;
-      top: 17%;
+      top: 19%;
       overflow: hidden;
       img{
         width: rem(200px);
@@ -327,6 +300,7 @@ img {
       a{
         background-color: #e61e4a;
         color: #fff;
+        margin-bottom: rem(14px);
       }
     }
   }
@@ -335,34 +309,11 @@ img {
   @include linear-gradient-yellow();
   .main{
     .up {
-      width: 100%;
-      padding: 12% 0;
-      text-align: center;
       .slogan{
         color: #774e25;
-        font-size: rem(26px);
-        line-height: rem(30px);
       }
       .copy{
         color: #774e25;
-        text-align: center;
-        font-size: rem(14px);
-        line-height: rem(20px);
-      }
-      .pb18{
-        padding-top: rem(18px);
-      }
-    }
-    .sample{
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      top: 16.8%;
-      overflow: hidden;
-      img{
-        width: rem(200px);
-        margin: 0 auto;
       }
     }
   }
@@ -397,6 +348,9 @@ img {
         padding-left: rem(33px);
         margin: 0 auto;
       }
+    }
+    .download-wrap{
+     margin-bottom: rem(18px);
     }
   }
 }

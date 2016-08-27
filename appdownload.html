@@ -44,7 +44,6 @@
             </div>
             <div class="download-wrap">
                 <a href="#">下载</a>
-                <div class="text">搭乘巴士&nbsp;&nbsp;这一次不为赶路</div>
                 <div class="downArrow"></div>
             </div>
         </div>
@@ -65,7 +64,6 @@
             </div>
             <div class="download-wrap">
                 <a href="#">下载</a>
-                <div class="text">搭乘巴士&nbsp;&nbsp;这一次不为赶路</div>
                 <div class="downArrow"></div>
             </div>
         </div>
@@ -86,13 +84,11 @@
             </div>
             <div class="download-wrap">
                 <a href="#">下载</a>
-                <div class="text">搭乘巴士&nbsp;&nbsp;这一次不为赶路</div>
-                <div class="downArrow"></div>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="/common/js/new-zepto.min.js"></script>
+<script type="text/javascript" src="/common/js/zepto.min.js"></script>
 <script>
     (function (doc, win) {
         var docEl = doc.documentElement,
@@ -116,87 +112,51 @@
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
     $(document).ready(function() {
-        var startY,endY,$index;
+        var startY,endY,offset,$index;
         var $wrap = $('.screen-wrap');
-        $('.downArrow').on('click',function(e){
-            var $this = $(this);
+        $('.downArrow').on('tap',function(e){
             e.preventDefault();
             e.stopPropagation();
-            slideUp($this.parents('.screen').index());
+            slideUp($(this).parents('.screen').index());
         });
-        function removeClasses(){
-            $wrap.removeClass('slideUp').removeClass('slideUp1').removeClass('slideUp2').removeClass('slideUp3');
-        }
-        function translate0(){
+        $('.download-wrap a').on('tap',function(event){
+            location.href = $(this).attr('href');
+        });
+        function translate(y){
             $wrap.css({
-                'transform': 'translate(0,0)',
-                '-webkit-transform': 'translate(0,0)'
-            });
-        }
-        function translate1(){
-            $wrap.css({
-                'transform': 'translate(0,-100%)',
-                '-webkit-transform': 'translate(0,-100%)'
-            });
-        }
-        function translate2(){
-            $wrap.css({
-                'transform': 'translate(0,-200%)',
-                '-webkit-transform': 'translate(0,-200%)'
-            });
-        }
-        function translate3(){
-            $wrap.css({
-                'transform': 'translate(0,-300%)',
-                '-webkit-transform': 'translate(0,-300%)'
+                'transform': 'translate(0,-'+y*100+'%)',
+                '-webkit-transform': 'translate(0,-'+y*100+'%)'
             });
         }
         function slideUp(index){
-            switch(index){
-                case 0: {
-                    translate1();
-                    break;
-                }
-                case 1:{
-                    translate2();
-                    break;
-                }
-                case 2:{
-                    translate3();
-                    break;
-                }
-                case 3: break;
+            if(index<3){
+                translate(index+1);
             }
         }
         function slideDown(index){
-            switch(index){
-                case 0: break;
-                case 1:{
-                    translate0();
-                    break;
-                }
-                case 2:{
-                    translate1();
-                    break;
-                }
-                case 3: {
-                    translate2();
-                    break;
-                }
+            if(index>0){
+                translate(index-1);
             }
         }
         $(document.body).bind('touchstart',function(e){
+            e.preventDefault();
+            e.stopPropagation();
             startY = e.changedTouches[0].clientY;
         });
         $(document.body).bind('touchend',function(e){
+            e.preventDefault();
+            e.stopPropagation();
             endY = e.changedTouches[0].clientY;
             $index = $(e.target).parents('.screen').index();
-//            $('body').scrollTop(0);
-//            $wrap.scrollTop(0);
-            if(endY-startY<0){
+            offset = endY-startY;
+            if($(e.target).hasClass('downArrow')){
                 slideUp($index);
-            }else if(endY-startY>0){
-                slideDown($index);
+            }else{
+                if(offset<0 && offset<-10){
+                    slideUp($index);
+                }else if(offset>0 && offset>10){
+                    slideDown($index);
+                }
             }
         });
     });
