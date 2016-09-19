@@ -20,6 +20,7 @@ body{
     margin-bottom: rem(10px);
   }
   .photo-wrapper {
+    position: relative;
     width: 100%;
     height: rem(185px);
     border: rem(2.5px) solid black;
