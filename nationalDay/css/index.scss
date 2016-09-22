@@ -199,17 +199,22 @@ img.header{
   @include flexflowRow();
   .tips{
     position: absolute;
-    width: rem(115px);
+    width: rem(228px);
     height: rem(38px);
     top:rem(20px);
-    left: 0;
+    left: .1rem;
     background: url("/nationalDay/images/tips.png");
-    background-size: rem(115px) rem(38px);
+    background-size: rem(228px) rem(38px);
+    color:white;
+    font-size: .6rem;
+    line-height: rem(38px);
+    padding-left: rem(5px);
   }
   a{
     display: block;
     @include flex(1);
     margin-right: rem(8px);
+    width: 100%;
     &:last-child{
       margin-right: 0;
     }
@@ -218,9 +223,17 @@ img.header{
     display: block;
     @include flex(1);
     visibility: hidden;
+    width: 100%;
+    img{
+      //display: none;
+      width: 100%;
+      //width:rem(298px);
+      height: rem(98.2*2px);
+    }
   }
   .double-item{
     position: relative;
+    display: inline-block;
     font-size: 0;
     box-sizing: border-box;
     padding: rem(4px);
@@ -228,7 +241,9 @@ img.header{
     background-color: white;
     margin-top: rem(6px);
     img{
-      width:rem(298px);
+      //display: none;
+      width: 100%;
+      //width:rem(298px);
       height: rem(98.2*2px);
     }
     h3{
