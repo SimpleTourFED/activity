@@ -1,0 +1,18 @@
+@import "/css/common";
+
+.content{
+  margin-top: rem(-30px);
+  .product{
+    margin-bottom: rem(24px);
+  }
+  .notify{
+    text-align: center;
+    font-size: rem(24px);
+    color: #fff;
+    line-height: rem(37px);
+    margin-bottom: rem(22px);
+  }
+  .rank-list{
+    margin-bottom: rem(26px);
+  }
+}

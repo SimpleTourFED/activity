@@ -1,0 +1,30 @@
+@import "/css/common";
+
+.content{
+  margin-top: rem(-30px);
+  .product{
+    margin-bottom: rem(24px);
+  }
+  .notify{
+    text-align: center;
+    font-size: rem(36px);
+    color: #fff;
+    line-height: rem(50px);
+    margin-bottom: rem(22px);
+  }
+  .buttons{
+    a{
+      width: rem(258px);
+      height: rem(46px);
+    }
+    a:first-child{
+      margin-right: rem(50px);
+    }
+    a:last-child{
+      background-color: #0dc08f;
+    }
+  }
+  .rank-list{
+    margin-bottom: rem(26px);
+  }
+}

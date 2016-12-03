@@ -1,0 +1,46 @@
+@import "/css/common";
+
+.content{
+  margin-top: rem(-10px);
+  &:after{
+    position: absolute;
+    content: '';
+    display: block;
+    width: rem(26px);
+    height: rem(28px);
+    background: url(/images/snow@4x.png) no-repeat center;
+    background-size: cover;
+    top: rem(-30px);
+    left: rem(97px);
+    z-index: 5;
+  }
+  &:before{
+    position: absolute;
+    content: '';
+    display: block;
+    width: rem(26px);
+    height: rem(28px);
+    background: url(/images/snow@4x.png) no-repeat center;
+    background-size: cover;
+    top: rem(-54px);
+    right: rem(0px);
+    z-index: 5;
+  }
+  .product{
+    margin-bottom: rem(14px);
+  }
+  .buttons{
+    a{
+      display: inline-block;
+      width: rem(272px);
+      height: rem(54px);
+      line-height: rem(54px);
+    }
+    a:first-child{
+      margin-right: rem(24px);
+    }
+    a:last-child{
+      background-color: #3b99f6;
+    }
+  }
+}
