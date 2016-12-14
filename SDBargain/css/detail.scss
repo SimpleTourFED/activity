@@ -1,7 +1,6 @@
 @import "/css/common";
 
 .content{
-  margin-top: rem(-30px);
   .product{
     margin-bottom: rem(24px);
   }
@@ -14,5 +13,14 @@
   }
   .rank-list{
     margin-bottom: rem(26px);
+  }
+  table{
+    tr{
+      @include displayflex;
+      @include flexflowRow;
+    }
+    td,th{
+      @include flex;
+    }
   }
 }

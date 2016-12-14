@@ -1,7 +1,6 @@
 @import "/css/common";
 
 .content{
-  margin-top: rem(-30px);
   .info-message{
     img{
       display: block;
@@ -20,5 +19,8 @@
       padding: rem(8px);
       @include border-radius(8px);
     }
+  }
+  .buttons {
+    margin-bottom: rem(32px);
   }
 }

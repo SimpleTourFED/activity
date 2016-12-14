@@ -11,7 +11,7 @@
 </head>
 <body style="visibility: hidden;">
 <div class="header">
-    <img src="/images/header@2x.png" alt=""/>
+    <img src="/images/sdBargain_header@3x.png" alt=""/>
 </div>
 <div class="content">
     <div class="product">
@@ -23,8 +23,8 @@
         </div>
     </div>
     <div class="buttons">
-        <a>我要原价买</a>
-        <a>我要"0元购"</a>
+        <a class="buy0">我要原价买</a>
+        <a class="buy">我要"0元购"</a>
     </div>
     <div class="notify">
         已有500人参与该商品的砍价
@@ -32,61 +32,38 @@
     <div class="rank-list">
         <div class="title">砍价排行榜</div>
         <table>
+            <tbody>
             <tr>
                 <th>排名</th>
                 <th>用户</th>
                 <th>砍后价格</th>
             </tr>
             <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
+                <td>1</td>
+                <td>151****8765</td>
+                <td>35.31元</td>
             </tr>
             <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
+                <td>2</td>
+                <td>189****5582</td>
+                <td>37.46元</td>
             </tr>
             <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
+                <td>3</td>
+                <td>131****5678</td>
+                <td>37.63元</td>
             </tr>
             <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
+                <td>4</td>
+                <td>131****5678</td>
+                <td>38.20元</td>
             </tr>
             <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
+                <td>5</td>
+                <td>131****5678</td>
+                <td>38.92元</td>
             </tr>
-            <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
-            </tr>
-            <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
-            </tr>
-            <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
-            </tr>
-            <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
-            </tr>
-            <tr>
-                <td>XXX</td>
-                <td>13845****11</td>
-                <td>999元</td>
-            </tr>
+            </tbody>
         </table>
     </div>
     <div class="esoterica">
@@ -106,20 +83,20 @@
     <a href="">年终特惠,17去玩</a>
 </div>
 <!--<div class="modal-wrap">-->
-    <!--<div class="modal show">-->
-        <!--<div class="modal-content">-->
-            <!--<div class="text-content">-->
-                <!--你已成功获得稻亚六日游<br/>-->
-                <!--不能发起改商品砍价!-->
-            <!--</div>-->
-            <!--<div class="btns">-->
-                <!--<span class="yes">确定</span>-->
-                <!--<span class="no">取消</span>-->
-            <!--</div>-->
-            <!--<div class="close"></div>-->
-        <!--</div>-->
-    <!--</div>-->
-    <!--<div class="modal-overlay visible"></div>-->
+<!--<div class="modal show">-->
+<!--<div class="modal-content">-->
+<!--<div class="text-content">-->
+<!--你已成功获得稻亚六日游<br/>-->
+<!--不能发起改商品砍价!-->
+<!--</div>-->
+<!--<div class="btns">-->
+<!--<span class="yes">确定</span>-->
+<!--<span class="no">取消</span>-->
+<!--</div>-->
+<!--<div class="close"></div>-->
+<!--</div>-->
+<!--</div>-->
+<!--<div class="modal-overlay visible"></div>-->
 <!--</div>-->
 <script type="text/javascript" src="/js/zepto.min.5551012.js"></script>
 <script>
@@ -162,19 +139,15 @@
                     cancelFun: function () {
                     }
                 };
-                var $modal,_this = this;
+                var $modal, _this = this;
                 var opts = $.extend(defaultOption, option);
                 var html = '<div class="modal-wrap"><div class="modal"><div class="modal-content"><div class="text-content">'
                         + opts.msg + '</div><div class="btns"><span class="yes">确定</span>';
                 if (opts.cancel) {
                     html += '<span class="no">取消</span>';
                 }
-                html += '</div><div class="close"></div></div></div><div class="modal-overlay"></div></div>';
+                html += '</div></div></div><div class="modal-overlay"></div></div>';
                 $modal = $(html).appendTo(document.body);
-                $modal.on('click', '.close', function (e) {
-                    _this.close($modal);
-                    opts.cancelFun();
-                });
                 $modal.on('click', '.no', function (e) {
                     _this.close($modal);
                     opts.cancelFun($(this).text());
@@ -192,27 +165,33 @@
                     $modal.find('.modal-overlay').removeClass('visible');
                 }
             }
-            $.modal = function(option){
+
+            $.modal = function (option) {
                 var modal = new Modal(option);
                 modal.open();
             }
         })(Zepto);
-        $.modal({
-            msg: '你已成功获得稻亚六日游<br/>不能发起改商品砍价!',
-            yes: '确定',
-            cancel: false,
-            yesFun: function () {
-                $.modal({
-                    msg: '你已成功获得稻亚六日游<br/>不能发起改商品砍价!',
-                    yes: '确定',
-                    cancel: true,
-                    yesFun: function () {
+        $('.buy0').click(function(e){
+            $.modal({
+                msg: '你已成功获得稻亚六日游<br/>不能发起改商品砍价!',
+                yes: '确定',
+                cancel: true,
+                yesFun: function () {
 
-                    },
-                    cancelFun: function () {
-                    }
-                });
-            }
+                },
+                cancelFun: function () {
+                }
+            });
+        });
+        $('.buy').click(function(e){
+            $.modal({
+                msg: '你已成功获得稻亚六日游<br/>不能发起改商品砍价!',
+                yes: '确定',
+                cancel: false,
+                yesFun: function () {
+
+                }
+            });
         });
     });
 </script>

@@ -1,7 +1,6 @@
 @import "/css/common";
 
 .content{
-  margin-top: rem(-30px);
   .info-message{
     img{
       display: block;
@@ -18,5 +17,8 @@
       margin-top: rem(16px);
       margin-bottom: rem(18px);
     }
+  }
+  a.btn{
+    margin-bottom: rem(28px);
   }
 }
