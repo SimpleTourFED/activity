@@ -2,32 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60bdac5d-f4f6-45d4-b835-0fba4a724404" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/banner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/both-footer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/both.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/cursor.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/flag.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/hotspring-footer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/hotspring.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/skiing-footer.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/skiing.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/images/xlxs-bus2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/border.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/card1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/card2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/card3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/dog1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/dog2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/dog3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/dog4.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/dog5.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/images/page1-bg.png" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/css/index.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/xlxs/xlxs.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/css/yyy.scss" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yyy/yyy.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yyy/css/yyy.scss" afterPath="$PROJECT_DIR$/yyy/css/yyy.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yyy/yyy.html" afterPath="$PROJECT_DIR$/yyy/yyy.html" />
     </list>
     <ignored path="activity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,8 +52,8 @@
       <file leaf-file-name="yyy.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yyy/yyy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="19" column="47" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="47" />
+            <state relative-caret-position="140">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -96,15 +74,15 @@
       <file leaf-file-name="yyy.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="123" column="3" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
+            <state relative-caret-position="316">
+              <caret line="145" column="1" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
               <folding>
                 <element signature="e#157#271#0" expanded="false" />
                 <element signature="e#292#398#0" expanded="false" />
                 <element signature="e#450#670#0" expanded="false" />
                 <element signature="e#722#942#0" expanded="false" />
                 <element signature="e#992#1104#0" expanded="false" />
-                <element signature="e#1764#1809#0" expanded="false" />
+                <element signature="e#1784#1829#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -233,88 +211,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yyy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yyy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="yyy" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -325,6 +221,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="ignore_missing_gitignore" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -405,10 +302,18 @@
       <workItem from="1482458218345" duration="972000" />
       <workItem from="1482482082153" duration="12000" />
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <created>1484217234362</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1484217234362</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9118000" />
+    <option name="totallyTimeSpent" value="12535000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="773" extended-state="6" />
@@ -443,6 +348,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <option name="LAST_COMMIT_MESSAGE" value="1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -745,14 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/xlxs/css/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="204" column="32" selection-start-line="204" selection-start-column="32" selection-end-line="204" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common/css/base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="142">
@@ -764,34 +665,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xlxs/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="204" column="32" selection-start-line="204" selection-start-column="32" selection-end-line="204" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yyy/yyy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="47" />
+        <state relative-caret-position="140">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="123" column="3" selection-start-line="123" selection-start-column="3" selection-end-line="123" selection-end-column="3" />
+        <state relative-caret-position="316">
+          <caret line="145" column="1" selection-start-line="145" selection-start-column="1" selection-end-line="145" selection-end-column="1" />
           <folding>
             <element signature="e#157#271#0" expanded="false" />
             <element signature="e#292#398#0" expanded="false" />
             <element signature="e#450#670#0" expanded="false" />
             <element signature="e#722#942#0" expanded="false" />
             <element signature="e#992#1104#0" expanded="false" />
-            <element signature="e#1764#1809#0" expanded="false" />
+            <element signature="e#1784#1829#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

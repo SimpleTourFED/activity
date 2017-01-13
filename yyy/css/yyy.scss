@@ -43,8 +43,8 @@ $opacity: 1 !default;
 }
 @-webkit-keyframes down1 {
   0% {
-    -webkit-transform: translate3d(0, -2000px, 0);
-    transform: translate3d(0, -2000px, 0);
+    -webkit-transform: translate3d(0, rem(-3000px), 0);
+    transform: translate3d(0, rem(-3000px), 0);
   }
   100% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -53,8 +53,8 @@ $opacity: 1 !default;
 }
 @keyframes down1{
   0% {
-    -webkit-transform: translate3d(0, -3000px, 0);
-    transform: translate3d(0, -3000px, 0);
+    -webkit-transform: translate3d(0, rem(-3000px), 0);
+    transform: translate3d(0, rem(-3000px), 0);
   }
   100% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -114,25 +114,25 @@ html,body{
   .a-first,.a-second,.a-third{
     position: absolute;
     z-index: 3;
-    height: 3000px;
+    height: rem(3000px);
   }
   .a-first{
     width: rem(158px);
     left:rem(40px);
-    background: url("/yyy/images/card1.png") repeat 0 3000px  ;
+    background: url("/yyy/images/card1.png") repeat bottom  ;
     background-size: rem(158px);
   }
   .a-second{
     width: rem(178px);
     left:50%;
     margin-left: rem(-89px);
-    background: url("/yyy/images/card2.png") repeat  0 3000px ;
+    background: url("/yyy/images/card2.png") repeat  bottom;
     background-size: rem(178px);
   }
   .a-third{
     width: rem(158px);
     right:rem(40px);
-    background: url("/yyy/images/card3.png") repeat  0 3000px  ;
+    background: url("/yyy/images/card3.png") repeat  bottom ;
     background-size: rem(158px);
   }
   .animation1{
