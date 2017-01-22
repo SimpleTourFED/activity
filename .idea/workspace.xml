@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="60bdac5d-f4f6-45d4-b835-0fba4a724404" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/common/css/animation.scss" afterPath="$PROJECT_DIR$/common/css/animation.scss" />
     </list>
     <ignored path="activity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -402,7 +401,7 @@
       <workItem from="1482458218345" duration="972000" />
       <workItem from="1482482082153" duration="12000" />
       <workItem from="1484797002929" duration="1834000" />
-      <workItem from="1485055946364" duration="2604000" />
+      <workItem from="1485055946364" duration="3111000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
       <created>1485056346541</created>
@@ -411,11 +410,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485056346541</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1485069825566</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1485069825567</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13556000" />
+    <option name="totallyTimeSpent" value="14063000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1280" height="773" extended-state="6" />
