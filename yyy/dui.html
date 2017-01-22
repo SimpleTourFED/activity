@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>简途旅行</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/yyy/css/dui.scss?__inline">
+</head>
+<body>
+<div class="pages">
+    <div class="page page-dui">
+        <div class="page-content">
+            <img src="/yyy/images/dui/dui_bg.png" class="bg">
+            <div class="font-dui">
+                <img src="/yyy/images/dui/font_dui.png" class="font">
+                <img src="/yyy/images/dui/rotate.png" alt="" class="rotate-icon">
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="/common/js/zepto.min.js"></script>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    var style;
+                    if (style = document.getElementById("forhtml")) {
+                        style.parentNode.removeChild(style);
+                    }
+                    style = document.createElement("style");
+                    style.id = "forhtml";
+                    document.head.appendChild(style);
+                    style.appendChild(document.createTextNode("html{font-size:" + 20 * (clientWidth / 375) + "px !important;}"));
+                };
+        recalc();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    $(document).ready(function() {
+        var docWidth = $(document).width()-16;
+        var docHeight = $(document).height()-16;
+        if(docWidth/docHeight > (723/1170)){
+            $(".page-content").css({"height":docHeight+'px',"width":docHeight*723/1170+'px',left:(docWidth-docHeight*723/1170)/2+8+'px'})
+        }else{
+            $(".page-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
+        }
+    });
+
+</script>
+</body>
+</html>

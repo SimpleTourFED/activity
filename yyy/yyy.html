@@ -44,13 +44,16 @@
             win.addEventListener(resizeEvt, recalc, false);
             doc.addEventListener('DOMContentLoaded', recalc, false);
         })(document, window);
-        var docWidth = $(document).width()-16;
-        var docHeight = $(document).height()-16;
-        if(docWidth/docHeight > (723/1170)){
-            $(".page1-content").css({"height":docHeight+'px',"width":docHeight*723/1170+'px',left:(docWidth-docHeight*723/1170)/2+8+'px'})
-        }else{
-            $(".page1-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
-        }
+        $(document).ready(function() {
+            var docWidth = $(document).width()-16;
+            var docHeight = $(document).height()-16;
+            if(docWidth/docHeight > (723/1170)){
+                $(".page1-content").css({"height":docHeight+'px',"width":docHeight*723/1170+'px',left:(docWidth-docHeight*723/1170)/2+8+'px'})
+            }else{
+                $(".page1-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
+            }
+        });
+
     </script>
 </body>
 </html>
