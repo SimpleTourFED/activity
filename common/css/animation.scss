@@ -1,4 +1,3 @@
-@import "/common/css/base";
 @keyframes rotate {
   0% {
     -webkit-transform:translate3d(200%,200%,0) rotate(0deg) scale(3,3);
@@ -13,9 +12,6 @@
   height: 100%;
 }
 img.rotate{
-  width: 6rem;
-  position: absolute;
-  left: 10rem;
   -webkit-animation:rotate ease-out .5s forwards;
   animation:rotate ease-out .5s forwards;
 }

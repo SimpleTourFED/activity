@@ -10,15 +10,67 @@
     <link rel="stylesheet" href="/yyy/css/yyy.scss">
 </head>
 <body>
-    <div class="pages">
-        <div class="page page1">
-            <div class="page1-content">
+    <div class="pages" id="pages">
+        <!--<div class="audio on"></div>-->
+        <!--<audio id="audio" autoplay="" loop="loop" style="display:none" controls="">-->
+            <!--<source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">-->
+        <!--</audio>-->
+        <div class="page page1 current">
+            <div class="page-content">
+                <div class="cover hide"></div>
+                <div class="cover-content out">
+                    <img src="/yyy/images/title.png" alt="">
+                </div>
                 <img src="/yyy/images/page1-bg.png" class="bg">
-                <img src="/yyy/images/dog1.png" class="dog">
+                <img src="/yyy/images/dog1.gif" class="dog">
                 <img src="/yyy/images/border.png" class="border">
+                <div class="bottom">
+                    <img src="/yyy/images/bottom_font.png" class="bottom_font png hide">
+                    <img src="/yyy/images/bottom_font_move.gif" class="bottom_font gif hide">
+                </div>
                 <div class="a-first animation1"></div>
                 <div class="a-second animation2"></div>
                 <div class="a-third animation1"></div>
+                <div class="fly_card">
+                    <img src="/yyy/images/flyCard/zhi1.png" alt="" class="zhi1" />
+                    <img src="/yyy/images/flyCard/zhi2.png" alt="" class="zhi2" />
+                    <img src="/yyy/images/flyCard/zhi3.png" alt="" class="zhi3" />
+                    <img src="/yyy/images/flyCard/zhi4.png" alt="" class="zhi4" />
+
+                    <div class="meanwhile">
+                        <img src="/yyy/images/flyCard/zhi5.png" alt="" class="zhi5" />
+                        <img src="/yyy/images/flyCard/zhi6.png" alt="" class="zhi6" />
+                        <img src="/yyy/images/flyCard/zhi7.png" alt="" class="zhi7" />
+                        <img src="/yyy/images/flyCard/zhi8.png" alt="" class="zhi8" />
+                        <img src="/yyy/images/flyCard/zhi9.png" alt="" class="zhi9" />
+                        <img src="/yyy/images/flyCard/zhi10.png" alt="" class="zhi10" />
+                        <img src="/yyy/images/flyCard/zhi11.png" alt="" class="zhi11" />
+                        <img src="/yyy/images/flyCard/zhi12.png" alt="" class="zhi12" />
+                        <img src="/yyy/images/flyCard/zhi13.png" alt="" class="zhi13" />
+                        <img src="/yyy/images/flyCard/zhi14.png" alt="" class="zhi14" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="page page2">
+            <div class="page-content">
+                <img src="/yyy/images/page1-bg.png" class="bg">
+                <img src="/yyy/images/preVideo/black_people.png" class="black_people">
+                <img src="/yyy/images/border.png" class="border">
+                <img src="/yyy/images/preVideo/people_card1.png" alt="" class="people_card people_card1">
+                <img src="/yyy/images/preVideo/people_card2.png" alt="" class="people_card people_card2">
+                <img src="/yyy/images/preVideo/people_card3.png" alt="" class="people_card people_card3">
+                <img src="/yyy/images/preVideo/people_card4.png" alt="" class="people_card people_card4">
+                <img src="/yyy/images/preVideo/people_card5.png" alt="" class="people_card people_card5">
+                <img src="/yyy/images/preVideo/people_card6.png" alt="" class="people_card people_card6">
+                <img src="/yyy/images/preVideo/people_card7.png" alt="" class="people_card people_card7">
+                <img src="/yyy/images/preVideo/video_font.png" class="video_font out">
+                <img src="/yyy/images/preVideo/play.gif" alt="" class="play_btn">
+                <div class="bottom">
+                    <img src="/yyy/images/preVideo/skipVideo.png" class="bottom_font">
+                </div>
+                <!--<video style="position: absolute;z-index:100;" src="https://videos.simpletour.com/simpletour_year_mv.mov" controls="controls"></video>-->
             </div>
         </div>
     </div>
@@ -44,13 +96,86 @@
             win.addEventListener(resizeEvt, recalc, false);
             doc.addEventListener('DOMContentLoaded', recalc, false);
         })(document, window);
-        var docWidth = $(document).width()-16;
-        var docHeight = $(document).height()-16;
-        if(docWidth/docHeight > (723/1170)){
-            $(".page1-content").css({"height":docHeight+'px',"width":docHeight*723/1170+'px',left:(docWidth-docHeight*723/1170)/2+8+'px'})
-        }else{
-            $(".page1-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
-        }
+        $(document).ready(function() {
+            var Promise = window.Promise;
+            var docWidth = $(document).width()-16;
+            var docHeight = $(document).height()-16;
+            if(docWidth/docHeight > (723/1170)){
+                $(".page-content").css({"height":docHeight+'px',"width":docHeight*723/1170+'px',left:(docWidth-docHeight*723/1170)/2+8+'px'})
+            }else{
+                $(".page-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
+            }
+            $('.bottom .png').removeClass('hide').addClass('show');
+
+            function animation($zhi,index) {
+                return new Promise(function(resolve, reject) {
+                    function move(){
+                        $zhi.addClass('rotate'+index);
+                        setTimeout(function() {
+                            if(index == 5) {
+                                $('.meanwhile img').addClass('rotate');
+                                resolve();
+                            } else if(index == 6) {
+                                setTimeout(function() {
+                                    $('.cover').removeClass('hide');
+                                    $('.cover-content').removeClass('out').addClass('in');
+                                    $('.bottom .png').hide();
+                                    $('.bottom .gif').removeClass('hide').addClass('show');
+                                    resolve();
+                                },1000);
+                            } else {
+                                if(index == 0) {
+                                    $('.dog').attr('src','/yyy/images/dog'+(index+1)+'.gif').addClass('wobble');
+                                } else {
+                                    $('.dog').attr('src','/yyy/images/dog'+(index+1)+'.png').addClass('wobble');
+                                }
+                                setTimeout(function() {
+                                    $('.dog').removeClass('wobble');
+                                    // 设置两次直接的间隔
+                                    setTimeout(function() {
+                                        resolve();
+                                    },1000);
+                                },100);
+                            }
+                        },700);
+                    }
+                    move()
+                })
+            };
+            setTimeout(function(){
+                animation($('.zhi1'),1)
+                        .then(function(){return animation($('.zhi2'),2) })
+                        .then(function(){return animation($('.zhi3'),3) })
+                        .then(function(){return animation($('.zhi4'),4) })
+                        .then(function(){return animation($('.zhi4'),5) })
+                        .then(function(){return animation($('.zhi4'),6) })
+                        .then(function() {
+
+                        })
+            },5000);
+
+            $('.bottom_font.gif').click(function() {
+                $('.page1').removeClass('current').addClass('prev');
+                $('.page2').addClass('current');
+                setTimeout(function() {
+                    $('.black_people').addClass('riseUp');
+                    setTimeout(function() {
+                        $('.video_font').removeClass('out').addClass('in');
+                        var $peopleCard = $('.people_card');
+                        $peopleCard.eq(0).addClass('gradual');
+                        $peopleCard.eq(2).addClass('gradual');
+                        $peopleCard.eq(4).addClass('gradual');
+                        $peopleCard.eq(6).addClass('gradual');
+                        setTimeout(function() {
+                            $peopleCard.eq(1).addClass('gradual');
+                            $peopleCard.eq(3).addClass('gradual');
+                            $peopleCard.eq(5).addClass('gradual');
+                        },1000);
+                    },1100);
+                },700);
+            });
+        });
+
     </script>
 </body>
 </html>
