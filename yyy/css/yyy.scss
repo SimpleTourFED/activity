@@ -142,42 +142,42 @@ $opacity: 1 !default;
 
 @keyframes rotateFly1 {
   0% {
-    -webkit-transform:translate3d(200%,200%,0) rotate(0deg) scale(1,1);
-    transform: translate3d(200%,200%,0) rotate(0deg) scale(1,1);
+    -webkit-transform:translate3d(200%,200%,0) rotate(0deg) scale(3,3);
+    transform: translate3d(200%,200%,0) rotate(0deg) scale(3,3);
   }
   100%{
-    -webkit-transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
-    transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
+    -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
+    transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
   }
 }
 @keyframes rotateFly2 {
   0% {
-    -webkit-transform:translate3d(-200%,0,0) rotate(0deg) scale(1,1);
-    transform: translate3d(-200%,0,0) rotate(0deg) scale(1,1);
+    -webkit-transform:translate3d(-200%,0,0) rotate(0deg) scale(2,2);
+    transform: translate3d(-200%,0,0) rotate(0deg) scale(2,2);
   }
   100%{
-    -webkit-transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
-    transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
+    -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
+    transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
   }
 }
 @keyframes rotateFly3 {
   0% {
-    -webkit-transform:translate3d(20%,200%,0) rotate(0deg) scale(1,1);
-    transform: translate3d(20%,200%,0) rotate(0deg) scale(1,1);
+    -webkit-transform:translate3d(20%,200%,0) rotate(0deg) scale(2,2);
+    transform: translate3d(20%,200%,0) rotate(0deg) scale(2,2);
   }
   100%{
-    -webkit-transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
-    transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
+    -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
+    transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
   }
 }
 @keyframes rotateFly4 {
   0% {
-    -webkit-transform:translate3d(100%,100%,0) rotate(0deg) scale(1,1);
-    transform: translate3d(100%,100%,0) rotate(0deg) scale(1,1);
+    -webkit-transform:translate3d(10%,10%,0) rotate(0deg) scale(2,2);
+    transform: translate3d(10%,10%,0) rotate(0deg) scale(2,2);
   }
   100%{
-    -webkit-transform: translate3d(0,0,0) rotate(720deg) scale(1,1);
-    transform: translate3d(0,0,0) rotate(720deg) scale(1,1);
+    -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
+    transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
   }
 }
 @-webkit-keyframes riseUp {
