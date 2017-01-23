@@ -11,14 +11,44 @@
 </head>
 <body>
     <div class="pages">
+        <!--<div class="audio on"></div>-->
+        <!--<audio id="audio" autoplay="" loop="loop" style="display:none" controls="">-->
+            <!--<source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">-->
+        <!--</audio>-->
         <div class="page page1">
             <div class="page1-content">
+                <div class="cover hide"></div>
+                <div class="cover-content out">
+                    <img src="/yyy/images/title.png" alt="">
+                </div>
                 <img src="/yyy/images/page1-bg.png" class="bg">
                 <img src="/yyy/images/dog1.png" class="dog">
                 <img src="/yyy/images/border.png" class="border">
+                <div class="bottom">
+                    <img src="/yyy/images/bottom_font.png" class="bottom_font">
+                </div>
                 <div class="a-first animation1"></div>
                 <div class="a-second animation2"></div>
                 <div class="a-third animation1"></div>
+                <div class="fly_card">
+                    <img src="/yyy/images/flyCard/zhi1.png" alt="" class="zhi1" />
+                    <img src="/yyy/images/flyCard/zhi2.png" alt="" class="zhi2" />
+                    <img src="/yyy/images/flyCard/zhi3.png" alt="" class="zhi3" />
+                    <img src="/yyy/images/flyCard/zhi4.png" alt="" class="zhi4" />
+
+                    <div class="meanwhile">
+                        <img src="/yyy/images/flyCard/zhi5.png" alt="" class="zhi5" />
+                        <img src="/yyy/images/flyCard/zhi6.png" alt="" class="zhi6" />
+                        <img src="/yyy/images/flyCard/zhi7.png" alt="" class="zhi7" />
+                        <img src="/yyy/images/flyCard/zhi8.png" alt="" class="zhi8" />
+                        <img src="/yyy/images/flyCard/zhi9.png" alt="" class="zhi9" />
+                        <img src="/yyy/images/flyCard/zhi10.png" alt="" class="zhi10" />
+                        <img src="/yyy/images/flyCard/zhi11.png" alt="" class="zhi11" />
+                        <img src="/yyy/images/flyCard/zhi12.png" alt="" class="zhi12" />
+                        <img src="/yyy/images/flyCard/zhi13.png" alt="" class="zhi13" />
+                        <img src="/yyy/images/flyCard/zhi14.png" alt="" class="zhi14" />
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -45,6 +75,8 @@
             doc.addEventListener('DOMContentLoaded', recalc, false);
         })(document, window);
         $(document).ready(function() {
+            var Promise = window.Promise;
+
             var docWidth = $(document).width()-16;
             var docHeight = $(document).height()-16;
             if(docWidth/docHeight > (723/1170)){
@@ -52,6 +84,39 @@
             }else{
                 $(".page1-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
             }
+
+            function animation($zhi,index) {
+                return new Promise(function(resolve, reject) {
+                    function move(){
+                        $zhi.addClass('rotate'+index);
+                        setTimeout(function() {
+                            if(index == 5) {
+                                $('.meanwhile img').addClass('rotate');
+                                resolve();
+                            } else if(index == 6) {
+                                $('.cover').removeClass('hide');
+                                $('.cover-content').removeClass('out').addClass('in');
+                                resolve();
+                            } else {
+                                $('.dog').attr('src','/yyy/images/dog'+(index+1)+'.png').addClass('wobble');
+                                setTimeout(function() {
+                                    $('.dog').removeClass('wobble');
+                                    resolve();
+                                },100);
+                            }
+                        },700);
+                    }
+                    move()
+                })
+            };
+            setTimeout(function(){
+                animation($('.zhi1'),1)
+                        .then(function(){return animation($('.zhi2'),2) })
+                        .then(function(){return animation($('.zhi3'),3) })
+                        .then(function(){return animation($('.zhi4'),4) })
+                        .then(function(){return animation($('.zhi4'),5) })
+                        .then(function(){return animation($('.zhi4'),6) })
+            },4000);
         });
 
     </script>
