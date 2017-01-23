@@ -253,13 +253,29 @@ html,body{
   height: 100%;
   font-size: 20px;
 }
+
 .pages,.page{
   top:0;
   left: 0;
   bottom: 0;
   right: 0;
+  height: 100%;
   overflow: hidden;
   position: absolute;
+}
+.page {
+  transform: translate3d(0,100%,0);
+  -webkit-transform:translate3d(0,100%,0);
+  transition: all 700ms ease-in;
+  -webkit-transition: all 700ms ease-in;
+  &.prev {
+    transform: translate3d(0,-100%,0);
+    -webkit-transform:translate3d(0,-100%,0);
+  }
+  &.current {
+    transform: translate3d(0,0,0);
+    -webkit-transform:translate3d(0,0,0);
+  }
 }
 .audio {
   width: rem(95px);
@@ -280,7 +296,7 @@ html,body{
 .page1{
   background-color: #f7f3e7;
   font-size: 0;
-  .page1-content{
+  .page-content{
     position: absolute;
     overflow: hidden;
     left:8px;
@@ -559,7 +575,7 @@ html,body{
 .page2{
   background-color: #f7f3e7;
   font-size: 0;
-  .page2-content{
+  .page-content{
     position: absolute;
     overflow: hidden;
     left:8px;
@@ -578,8 +594,8 @@ html,body{
     &.riseUp{
       position: absolute;
       z-index: 10;
-      -webkit-animation:riseUp ease-out 1s forwards;
-      animation:riseUp ease-out 1s forwards;
+      -webkit-animation:riseUp ease-out 1s both;
+      animation:riseUp ease-out 1s both;
     }
   }
   .border{
@@ -613,6 +629,21 @@ html,body{
     z-index: 10;
     left: 50%;
     margin-left: -40%;
+    &.in{
+      opacity: 1;
+      -webkit-transition-duration:1500ms;
+      transition-duration: 1500ms;
+      -webkit-transform:translate3d(0,0,0) scale(1);
+      transform: translate3d(0,0,0) scale(1);
+    }
+    &.out{
+      opacity: 0;
+      z-index: 10999;
+      -webkit-transition-duration: 1500ms;
+      transition-duration: 1500ms;
+      -webkit-transform: translate3d(0, 0, 0) scale(0.815);
+      transform: translate3d(0, 0, 0) scale(0.815);
+    }
   }
   .play_btn {
     position: absolute;

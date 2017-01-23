@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="/yyy/css/yyy.scss">
 </head>
 <body>
-    <div class="pages">
+    <div class="pages" id="pages">
         <!--<div class="audio on"></div>-->
         <!--<audio id="audio" autoplay="" loop="loop" style="display:none" controls="">-->
             <!--<source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">-->
         <!--</audio>-->
-        <div class="page page1">
-            <div class="page1-content">
+        <div class="page page1 current">
+            <div class="page-content">
                 <div class="cover hide"></div>
                 <div class="cover-content out">
                     <img src="/yyy/images/title.png" alt="">
                 </div>
                 <img src="/yyy/images/page1-bg.png" class="bg">
-                <img src="/yyy/images/dog1.png" class="dog">
+                <img src="/yyy/images/dog1.gif" class="dog">
                 <img src="/yyy/images/border.png" class="border">
                 <div class="bottom">
                     <img src="/yyy/images/bottom_font.png" class="bottom_font png hide">
@@ -52,6 +52,27 @@
                 </div>
             </div>
         </div>
+
+        <div class="page page2">
+            <div class="page-content">
+                <img src="/yyy/images/page1-bg.png" class="bg">
+                <img src="/yyy/images/preVideo/black_people.png" class="black_people">
+                <img src="/yyy/images/border.png" class="border">
+                <img src="/yyy/images/preVideo/people_card1.png" alt="" class="people_card1">
+                <img src="/yyy/images/preVideo/people_card2.png" alt="" class="people_card2">
+                <img src="/yyy/images/preVideo/people_card3.png" alt="" class="people_card3">
+                <img src="/yyy/images/preVideo/people_card4.png" alt="" class="people_card4">
+                <img src="/yyy/images/preVideo/people_card5.png" alt="" class="people_card5">
+                <img src="/yyy/images/preVideo/people_card6.png" alt="" class="people_card6">
+                <img src="/yyy/images/preVideo/people_card7.png" alt="" class="people_card7">
+                <img src="/yyy/images/preVideo/video_font.png" class="video_font out">
+                <img src="/yyy/images/preVideo/play.gif" alt="" class="play_btn">
+                <div class="bottom">
+                    <img src="/yyy/images/preVideo/skipVideo.png" class="bottom_font">
+                </div>
+                <!--<video style="position: absolute;z-index:100;" src="https://videos.simpletour.com/simpletour_year_mv.mov" controls="controls"></video>-->
+            </div>
+        </div>
     </div>
     <script src="/common/js/zepto.min.js"></script>
     <script>
@@ -77,14 +98,14 @@
         })(document, window);
         $(document).ready(function() {
             var Promise = window.Promise;
-
             var docWidth = $(document).width()-16;
             var docHeight = $(document).height()-16;
             if(docWidth/docHeight > (723/1170)){
-                $(".page1-content").css({"height":docHeight+'px',"width":docHeight*723/1170+'px',left:(docWidth-docHeight*723/1170)/2+8+'px'})
+                $(".page-content").css({"height":docHeight+'px',"width":docHeight*723/1170+'px',left:(docWidth-docHeight*723/1170)/2+8+'px'})
             }else{
-                $(".page1-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
+                $(".page-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
             }
+            $('.bottom .png').removeClass('hide').addClass('show');
 
             function animation($zhi,index) {
                 return new Promise(function(resolve, reject) {
@@ -103,7 +124,11 @@
                                     resolve();
                                 },1000);
                             } else {
-                                $('.dog').attr('src','/yyy/images/dog'+(index+1)+'.png').addClass('wobble');
+                                if(index == 0) {
+                                    $('.dog').attr('src','/yyy/images/dog'+(index+1)+'.gif').addClass('wobble');
+                                } else {
+                                    $('.dog').attr('src','/yyy/images/dog'+(index+1)+'.png').addClass('wobble');
+                                }
                                 setTimeout(function() {
                                     $('.dog').removeClass('wobble');
                                     // 设置两次直接的间隔
@@ -124,8 +149,22 @@
                         .then(function(){return animation($('.zhi4'),4) })
                         .then(function(){return animation($('.zhi4'),5) })
                         .then(function(){return animation($('.zhi4'),6) })
+                        .then(function() {
+
+                        })
             },5000);
-            $('.bottom .png').removeClass('hide').addClass('show');
+
+            $('.bottom_font.gif').click(function() {
+                $('.page1').removeClass('current').addClass('prev');
+                $('.page2').addClass('current');
+                setTimeout(function() {
+                    $('.black_people').addClass('riseUp');
+                    setTimeout(function() {
+                        $('.video_font').removeClass('out').addClass('in');
+                        $('.black_people').removeClass('riseUp').addClass('wobble');
+                    },1100);
+                },700);
+            });
         });
 
     </script>
