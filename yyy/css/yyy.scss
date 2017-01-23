@@ -160,7 +160,6 @@ $opacity: 1 !default;
     transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
   }
 }
-
 @keyframes rotateFly3 {
   0% {
     -webkit-transform:translate3d(20%,200%,0) rotate(0deg) scale(1,1);
@@ -177,8 +176,63 @@ $opacity: 1 !default;
     transform: translate3d(100%,100%,0) rotate(0deg) scale(1,1);
   }
   100%{
-    -webkit-transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
-    transform: translate3d(0,0,0) rotate(1080deg) scale(1,1);
+    -webkit-transform: translate3d(0,0,0) rotate(720deg) scale(1,1);
+    transform: translate3d(0,0,0) rotate(720deg) scale(1,1);
+  }
+}
+@-webkit-keyframes riseUp {
+  0% {
+    -webkit-transform:translate3d(0,200%,0) rotate(0deg) scale(1,1);
+    transform: translate3d(0,200%,0) rotate(0deg) scale(1,1);
+  }
+  100%{
+    -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
+    transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
+  }
+}
+@keyframes riseUp {
+  0% {
+    -webkit-transform:translate3d(0,200%,0) rotate(0deg) scale(1,1);
+    transform: translate3d(0,200%,0) rotate(0deg) scale(1,1);
+  }
+  100%{
+    -webkit-transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
+    transform: translate3d(0,0,0) rotate(0deg) scale(1,1);
+  }
+}
+.breathe{
+  box-shadow:0 1px 2px rgba(0,0,0,.3);
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-name: breathe;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+}
+@-webkit-keyframes breathe {
+  0% { opacity: .6; box-shadow:0 1px 2px rgba(255,0,0,0);;}
+  100% { opacity: 1; box-shadow:0 1px 30px rgba(255,0,0,0);}
+}
+
+@-webkit-keyframes stretch{
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 12%;
+  }
+  100%{
+    width: 10%;
+  }
+}
+@keyframes stretch{
+  0% {
+    width: 0;
+  }
+  70% {
+    width: 12%;
+  }
+  100%{
+    width: 10%;
   }
 }
 
@@ -256,16 +310,16 @@ html,body{
       }
       &.in{
         opacity: 1;
-        -webkit-transition-duration:1000ms;
-        transition-duration: 1000ms;
-        -webkit-transfrom:translate3d(0,0,0) scale(1);
+        -webkit-transition-duration:1500ms;
+        transition-duration: 1500ms;
+        -webkit-transform:translate3d(0,0,0) scale(1);
         transform: translate3d(0,0,0) scale(1);
       }
       &.out{
         opacity: 0;
         z-index: 10999;
-        -webkit-transition-duration: 1000ms;
-        transition-duration: 1000ms;
+        -webkit-transition-duration: 1500ms;
+        transition-duration: 1500ms;
         -webkit-transform: translate3d(0, 0, 0) scale(0.815);
         transform: translate3d(0, 0, 0) scale(0.815);
       }
@@ -302,11 +356,31 @@ html,body{
     background: url(/yyy/images/bottom_bg.png) no-repeat center;
     background-size: contain;
     text-align: center;
-    padding-top: 1.3rem;
+    padding-top: 1rem;
     .bottom_font {
       width: 80%;
+      opacity: 0;
+      &.png {
+        width: 84%;
+        margin-top: .3rem;
+      }
       img {
         width:100%;
+      }
+      &.show{
+        opacity: 1;
+        -webkit-transition-duration:500ms;
+        transition-duration: 500ms;
+        -webkit-transform:translate3d(0,0,0) scale(1);
+        transform: translate3d(0,0,0) scale(1);
+      }
+      &.hide{
+        opacity: 0;
+        z-index: 10999;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
+        -webkit-transform: translate3d(0, 0, 0) scale(0.815);
+        transform: translate3d(0, 0, 0) scale(0.815);
       }
     }
   }
@@ -480,8 +554,130 @@ html,body{
       -webkit-animation:rotateFly2 ease-out .7s forwards;
       animation:rotateFly2 ease-out .7s forwards;
     }
+  }
+}
+.page2{
+  background-color: #f7f3e7;
+  font-size: 0;
+  .page2-content{
+    position: absolute;
+    overflow: hidden;
+    left:8px;
+    top:8px;
+  }
+  .bg{
+    position: absolute;
+    width: 100%;
+    z-index:1;
+  }
+  .black_people{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 5;
+    &.wobble {
+      -webkit-animation:wobble ease-out .1s forwards;
+      animation:wobble ease-out .1s forwards;
+    }
+    &.riseUp{
+      position: absolute;
+      z-index: 10;
+      -webkit-animation:riseUp ease-out 1s forwards;
+      animation:riseUp ease-out 1s forwards;
+    }
+  }
+  .border{
+    position: absolute;
+    width: 100%;
+    z-index:11;
+  }
+  .bottom {
+    position: absolute;
+    width: 60%;
+    height: 4rem;
+    left:50%;
+    margin-left: -30%;
+    bottom: -.5rem;
+    z-index: 11;
+    background: url(/yyy/images/preVideo/skipVideoBg.png) no-repeat center;
+    background-size: contain;
+    text-align: center;
+    padding-top: 1rem;
+    .bottom_font {
+      width: 80%;
+      img {
+        width:100%;
+      }
+    }
+  }
+  .video_font{
+    position: absolute;
+    width: 80%;
+    bottom: 6.2rem;
+    z-index: 10;
+    left: 50%;
+    margin-left: -40%;
+  }
+  .play_btn {
+    position: absolute;
+    width: 14%;
+    bottom: 3.5rem;
+    z-index: 10;
+    left: 50%;
+    margin-left: -7%;
+  }
 
-
-
+  .people_card1 {
+    position: absolute;
+    width: 10%;
+    top: 27%;
+    right: 7%;
+    z-index: 4;
+    &.stretch {
+      -webkit-animation:stretch ease-out 1s forwards;
+      animation:stretch ease-out 1s forwards;
+    }
+  }
+  .people_card2 {
+    position: absolute;
+    width: 9%;
+    top: 3%;
+    right: 7%;
+    z-index: 4;
+  }
+  .people_card3 {
+    position: absolute;
+    width: 10%;
+    top: 3%;
+    left: 7%;
+    z-index: 4;
+  }
+  .people_card4 {
+    position: absolute;
+    width: 11%;
+    top: 3%;
+    left: 66%;
+    z-index: 4;
+  }
+  .people_card5 {
+    position: absolute;
+    width: 10%;
+    top: 27%;
+    left: 7%;
+    z-index: 4;
+  }
+  .people_card6 {
+    position: absolute;
+    width: 10%;
+    top: 3%;
+    left: 46%;
+    z-index: 4;
+  }
+  .people_card7 {
+    position: absolute;
+    width: 9%;
+    top: 3%;
+    left: 26%;
+    z-index: 4;
   }
 }

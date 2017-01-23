@@ -25,7 +25,8 @@
                 <img src="/yyy/images/dog1.png" class="dog">
                 <img src="/yyy/images/border.png" class="border">
                 <div class="bottom">
-                    <img src="/yyy/images/bottom_font.png" class="bottom_font">
+                    <img src="/yyy/images/bottom_font.png" class="bottom_font png hide">
+                    <img src="/yyy/images/bottom_font_move.gif" class="bottom_font gif hide">
                 </div>
                 <div class="a-first animation1"></div>
                 <div class="a-second animation2"></div>
@@ -94,9 +95,13 @@
                                 $('.meanwhile img').addClass('rotate');
                                 resolve();
                             } else if(index == 6) {
-                                $('.cover').removeClass('hide');
-                                $('.cover-content').removeClass('out').addClass('in');
-                                resolve();
+                                setTimeout(function() {
+                                    $('.cover').removeClass('hide');
+                                    $('.cover-content').removeClass('out').addClass('in');
+                                    $('.bottom .png').hide();
+                                    $('.bottom .gif').removeClass('hide').addClass('show');
+                                    resolve();
+                                },1000);
                             } else {
                                 $('.dog').attr('src','/yyy/images/dog'+(index+1)+'.png').addClass('wobble');
                                 setTimeout(function() {
@@ -117,6 +122,7 @@
                         .then(function(){return animation($('.zhi4'),5) })
                         .then(function(){return animation($('.zhi4'),6) })
             },4000);
+            $('.bottom .png').removeClass('hide').addClass('show');
         });
 
     </script>

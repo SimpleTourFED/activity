@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>简途旅行</title>
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="wap-font-scale" content="no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="/yyy/css/yyy.scss">
+</head>
+<body>
+<div class="pages">
+    <!--<div class="audio on"></div>-->
+    <!--<audio id="audio" autoplay="" loop="loop" style="display:none" controls="">-->
+    <!--<source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">-->
+    <!--</audio>-->
+    <div class="page page2">
+        <div class="page2-content">
+            <img src="/yyy/images/page1-bg.png" class="bg">
+            <img src="/yyy/images/preVideo/black_people.png" class="black_people riseUp">
+            <img src="/yyy/images/border.png" class="border">
+            <img src="/yyy/images/preVideo/people_card1.png" alt="" class="people_card1">
+            <img src="/yyy/images/preVideo/people_card2.png" alt="" class="people_card2">
+            <img src="/yyy/images/preVideo/people_card3.png" alt="" class="people_card3">
+            <img src="/yyy/images/preVideo/people_card4.png" alt="" class="people_card4">
+            <img src="/yyy/images/preVideo/people_card5.png" alt="" class="people_card5">
+            <img src="/yyy/images/preVideo/people_card6.png" alt="" class="people_card6">
+            <img src="/yyy/images/preVideo/people_card7.png" alt="" class="people_card7">
+            <img src="/yyy/images/preVideo/video_font.png" class="video_font breathe">
+            <img src="/yyy/images/preVideo/play.gif" alt="" class="play_btn">
+            <div class="bottom">
+                <img src="/yyy/images/preVideo/skipVideo.png" class="bottom_font">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/common/js/zepto.min.js"></script>
+<script>
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    var style;
+                    if (style = document.getElementById("forhtml")) {
+                        style.parentNode.removeChild(style);
+                    }
+                    style = document.createElement("style");
+                    style.id = "forhtml";
+                    document.head.appendChild(style);
+                    style.appendChild(document.createTextNode("html{font-size:" + 20 * (clientWidth / 375) + "px !important;}"));
+                };
+        recalc();
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+    $(document).ready(function() {
+        var Promise = window.Promise;
+
+        var docWidth = $(document).width()-16;
+        var docHeight = $(document).height()-16;
+        if(docWidth/docHeight > (723/1170)){
+            $(".page2-content").css({"height":docHeight+'px',"width":docHeight*723/1170+'px',left:(docWidth-docHeight*723/1170)/2+8+'px'})
+        }else{
+            $(".page2-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
+        }
+
+        function riseUp() {
+            $('.black_people').removeClass('riseUp').addClass('wobble');
+        }
+        setTimeout(function() {
+            riseUp();
+        },1100);
+    });
+
+</script>
+</body>
+</html>
