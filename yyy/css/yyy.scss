@@ -213,26 +213,38 @@ $opacity: 1 !default;
   100% { opacity: 1; box-shadow:0 1px 30px rgba(255,0,0,0);}
 }
 
-@-webkit-keyframes stretch{
+@-webkit-keyframes gradual{
   0% {
-    width: 0;
-  }
-  70% {
-    width: 12%;
+    opacity: 0;
+    z-index: 10999;
+    -webkit-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.815);
+    transform: translate3d(0, 0, 0) scale(0.815);
   }
   100%{
-    width: 10%;
+    opacity: 1;
+    -webkit-transition-duration:1000ms;
+    transition-duration: 1000ms;
+    -webkit-transform:translate3d(0,0,0) scale(1);
+    transform: translate3d(0,0,0) scale(1);
   }
 }
-@keyframes stretch{
+@keyframes gradual{
   0% {
-    width: 0;
-  }
-  70% {
-    width: 12%;
+    opacity: 0;
+    z-index: 10999;
+    -webkit-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+    -webkit-transform: translate3d(0, 0, 0) scale(0.815);
+    transform: translate3d(0, 0, 0) scale(0.815);
   }
   100%{
-    width: 10%;
+    opacity: 1;
+    -webkit-transition-duration:1000ms;
+    transition-duration: 1000ms;
+    -webkit-transform:translate3d(0,0,0) scale(1);
+    transform: translate3d(0,0,0) scale(1);
   }
 }
 
@@ -660,9 +672,9 @@ html,body{
     top: 27%;
     right: 7%;
     z-index: 4;
-    &.stretch {
-      -webkit-animation:stretch ease-out 1s forwards;
-      animation:stretch ease-out 1s forwards;
+    &.gradual {
+      -webkit-animation:gradual ease-in 2s forwards;
+      animation:gradual ease-out 2s forwards;
     }
   }
   .people_card2 {
@@ -671,6 +683,10 @@ html,body{
     top: 3%;
     right: 7%;
     z-index: 4;
+    &.gradual {
+      -webkit-animation:gradual ease-out .7s forwards;
+      animation:gradual ease-out .7s forwards;
+    }
   }
   .people_card3 {
     position: absolute;
@@ -678,6 +694,10 @@ html,body{
     top: 3%;
     left: 7%;
     z-index: 4;
+    &.gradual {
+      -webkit-animation:gradual ease-in 1.5s forwards;
+      animation:gradual ease-in 1.5s forwards;
+    }
   }
   .people_card4 {
     position: absolute;
@@ -692,6 +712,10 @@ html,body{
     top: 27%;
     left: 7%;
     z-index: 4;
+    &.gradual {
+      -webkit-animation:gradual ease-in 1s forwards;
+      animation:gradual ease-in 1s forwards;
+    }
   }
   .people_card6 {
     position: absolute;
@@ -699,6 +723,10 @@ html,body{
     top: 3%;
     left: 46%;
     z-index: 4;
+    &.gradual {
+      -webkit-animation:gradual ease-in 1s forwards;
+      animation:gradual ease-in 1s forwards;
+    }
   }
   .people_card7 {
     position: absolute;
@@ -706,5 +734,9 @@ html,body{
     top: 3%;
     left: 26%;
     z-index: 4;
+    &.gradual {
+      -webkit-animation:gradual ease .5s forwards;
+      animation:gradual ease .5s forwards;
+    }
   }
 }

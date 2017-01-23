@@ -58,13 +58,13 @@
                 <img src="/yyy/images/page1-bg.png" class="bg">
                 <img src="/yyy/images/preVideo/black_people.png" class="black_people">
                 <img src="/yyy/images/border.png" class="border">
-                <img src="/yyy/images/preVideo/people_card1.png" alt="" class="people_card1">
-                <img src="/yyy/images/preVideo/people_card2.png" alt="" class="people_card2">
-                <img src="/yyy/images/preVideo/people_card3.png" alt="" class="people_card3">
-                <img src="/yyy/images/preVideo/people_card4.png" alt="" class="people_card4">
-                <img src="/yyy/images/preVideo/people_card5.png" alt="" class="people_card5">
-                <img src="/yyy/images/preVideo/people_card6.png" alt="" class="people_card6">
-                <img src="/yyy/images/preVideo/people_card7.png" alt="" class="people_card7">
+                <img src="/yyy/images/preVideo/people_card1.png" alt="" class="people_card people_card1">
+                <img src="/yyy/images/preVideo/people_card2.png" alt="" class="people_card people_card2">
+                <img src="/yyy/images/preVideo/people_card3.png" alt="" class="people_card people_card3">
+                <img src="/yyy/images/preVideo/people_card4.png" alt="" class="people_card people_card4">
+                <img src="/yyy/images/preVideo/people_card5.png" alt="" class="people_card people_card5">
+                <img src="/yyy/images/preVideo/people_card6.png" alt="" class="people_card people_card6">
+                <img src="/yyy/images/preVideo/people_card7.png" alt="" class="people_card people_card7">
                 <img src="/yyy/images/preVideo/video_font.png" class="video_font out">
                 <img src="/yyy/images/preVideo/play.gif" alt="" class="play_btn">
                 <div class="bottom">
@@ -161,7 +161,16 @@
                     $('.black_people').addClass('riseUp');
                     setTimeout(function() {
                         $('.video_font').removeClass('out').addClass('in');
-                        $('.black_people').removeClass('riseUp').addClass('wobble');
+                        var $peopleCard = $('.people_card');
+                        $peopleCard.eq(0).addClass('gradual');
+                        $peopleCard.eq(2).addClass('gradual');
+                        $peopleCard.eq(4).addClass('gradual');
+                        $peopleCard.eq(6).addClass('gradual');
+                        setTimeout(function() {
+                            $peopleCard.eq(1).addClass('gradual');
+                            $peopleCard.eq(3).addClass('gradual');
+                            $peopleCard.eq(5).addClass('gradual');
+                        },1000);
                     },1100);
                 },700);
             });
