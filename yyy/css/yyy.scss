@@ -424,8 +424,8 @@ html,body{
       top: 12rem;
       left: 7rem;
       z-index: 10;
-      -webkit-animation:rotate1 ease-out .7s forwards;
-      animation:rotate1 ease-out .7s forwards;
+      -webkit-animation:rotate1 ease-in .7s forwards;
+      animation:rotate1 ease-in .7s forwards;
     }
 
     img.rotate2 {
@@ -434,8 +434,8 @@ html,body{
       top: 6rem;
       left: 4rem;
       z-index: 10;
-      -webkit-animation:rotate2 ease-out .7s forwards;
-      animation:rotate2 ease-out .7s forwards;
+      -webkit-animation:rotate2 ease-in .7s forwards;
+      animation:rotate2 ease-in .7s forwards;
     }
     img.rotate3 {
       width: 11rem;
@@ -443,8 +443,8 @@ html,body{
       top: 8.5rem;
       left: 2rem;
       z-index: 10;
-      -webkit-animation:rotate3 ease-out .7s forwards;
-      animation:rotate3 ease-out .7s forwards;
+      -webkit-animation:rotate3 ease-in .7s forwards;
+      animation:rotate3 ease-in .7s forwards;
     }
     img.rotate4 {
       width: 11rem;
@@ -452,8 +452,8 @@ html,body{
       top: 16.5rem;
       left: 5rem;
       z-index: 10;
-      -webkit-animation:rotate4 ease-out .7s forwards;
-      animation:rotate4 ease-out .7s forwards;
+      -webkit-animation:rotate4 ease-in .7s forwards;
+      animation:rotate4 ease-in .7s forwards;
     }
     .zhi5.rotate{
       width: 17rem;
@@ -461,8 +461,8 @@ html,body{
       top: 21.5rem;
       left: 0;
       z-index: 10;
-      -webkit-animation:rotateFly1 ease-out .7s forwards;
-      animation:rotateFly1 ease-out .7s forwards;
+      -webkit-animation:rotateFly1 ease-in .7s forwards;
+      animation:rotateFly1 ease-in .7s forwards;
     }
 
     .zhi6.rotate{
@@ -471,8 +471,8 @@ html,body{
       top: 10.5rem;
       left: -1rem;
       z-index: 10;
-      -webkit-animation:rotateFly2 ease-out .7s forwards;
-      animation:rotateFly2 ease-out .7s forwards;
+      -webkit-animation:rotateFly2 ease-in .6s forwards;
+      animation:rotateFly2 ease-in .6s forwards;
     }
 
     .zhi7.rotate{
@@ -481,8 +481,8 @@ html,body{
       top: 3.5rem;
       left: 6.6rem;
       z-index: 10;
-      -webkit-animation:rotateFly3 ease-out .7s forwards;
-      animation:rotateFly3 ease-out .7s forwards;
+      -webkit-animation:rotateFly3 ease-in .7s forwards;
+      animation:rotateFly3 ease-in .7s forwards;
     }
 
     .zhi8.rotate{
@@ -491,8 +491,8 @@ html,body{
       top: 2.5rem;
       left: 0;
       z-index: 10;
-      -webkit-animation:rotateFly4 ease-out .7s forwards;
-      animation:rotateFly4 ease-out .7s forwards;
+      -webkit-animation:rotateFly4 ease-in .7s forwards;
+      animation:rotateFly4 ease-in .7s forwards;
     }
 
     .zhi9.rotate{
@@ -501,8 +501,8 @@ html,body{
       top: 17.5rem;
       left: 2.5rem;
       z-index: 10;
-      -webkit-animation:rotateFly1 ease-out .7s forwards;
-      animation:rotateFly1 ease-out .7s forwards;
+      -webkit-animation:rotateFly1 ease-in .7s forwards;
+      animation:rotateFly1 ease-in .7s forwards;
     }
 
     .zhi10.rotate{
@@ -511,8 +511,8 @@ html,body{
       top: 10rem;
       left: 0;
       z-index: 10;
-      -webkit-animation:rotateFly2 ease-out .7s forwards;
-      animation:rotateFly2 ease-out .7s forwards;
+      -webkit-animation:rotateFly2 ease-in .7s forwards;
+      animation:rotateFly2 ease-in .7s forwards;
     }
 
     .zhi11.rotate{
@@ -521,8 +521,8 @@ html,body{
       top: 13.5rem;
       left: 8.5rem;
       z-index: 10;
-      -webkit-animation:rotateFly3 ease-out .7s forwards;
-      animation:rotateFly3 ease-out .7s forwards;
+      -webkit-animation:rotateFly3 ease-in .7s forwards;
+      animation:rotateFly3 ease-in .7s forwards;
     }
 
     .zhi12.rotate{
@@ -531,8 +531,8 @@ html,body{
       top: 8.5rem;
       left: 11rem;
       z-index: 10;
-      -webkit-animation:rotateFly4 ease-out .7s forwards;
-      animation:rotateFly4 ease-out .7s forwards;
+      -webkit-animation:rotateFly4 ease-in .7s forwards;
+      animation:rotateFly4 ease-in .7s forwards;
     }
 
     .zhi13.rotate{
@@ -541,8 +541,8 @@ html,body{
       top: 0.5rem;
       left: 8rem;
       z-index: 10;
-      -webkit-animation:rotateFly1 ease-out .7s forwards;
-      animation:rotateFly1 ease-out .7s forwards;
+      -webkit-animation:rotateFly1 ease-in .7s forwards;
+      animation:rotateFly1 ease-in .7s forwards;
     }
 
     .zhi14.rotate{
@@ -551,8 +551,8 @@ html,body{
       top: 8.5rem;
       left: 9rem;
       z-index: 10;
-      -webkit-animation:rotateFly2 ease-out .7s forwards;
-      animation:rotateFly2 ease-out .7s forwards;
+      -webkit-animation:rotateFly2 ease-in .7s forwards;
+      animation:rotateFly2 ease-in .7s forwards;
     }
   }
 }
@@ -575,10 +575,6 @@ html,body{
     width: 100%;
     bottom: 0;
     z-index: 5;
-    &.wobble {
-      -webkit-animation:wobble ease-out .1s forwards;
-      animation:wobble ease-out .1s forwards;
-    }
     &.riseUp{
       position: absolute;
       z-index: 10;
@@ -620,11 +616,11 @@ html,body{
   }
   .play_btn {
     position: absolute;
-    width: 14%;
-    bottom: 3.5rem;
+    width: 18%;
+    bottom: 3rem;
     z-index: 10;
     left: 50%;
-    margin-left: -7%;
+    margin-left: -9%;
   }
 
   .people_card1 {

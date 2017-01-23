@@ -106,7 +106,10 @@
                                 $('.dog').attr('src','/yyy/images/dog'+(index+1)+'.png').addClass('wobble');
                                 setTimeout(function() {
                                     $('.dog').removeClass('wobble');
-                                    resolve();
+                                    // 设置两次直接的间隔
+                                    setTimeout(function() {
+                                        resolve();
+                                    },1000);
                                 },100);
                             }
                         },700);
@@ -121,7 +124,7 @@
                         .then(function(){return animation($('.zhi4'),4) })
                         .then(function(){return animation($('.zhi4'),5) })
                         .then(function(){return animation($('.zhi4'),6) })
-            },4000);
+            },5000);
             $('.bottom .png').removeClass('hide').addClass('show');
         });
 
