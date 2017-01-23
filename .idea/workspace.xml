@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60bdac5d-f4f6-45d4-b835-0fba4a724404" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yyy/images/dog1.gif" afterPath="$PROJECT_DIR$/yyy/images/dog1.gif" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yyy/css/yyy.scss" afterPath="$PROJECT_DIR$/yyy/css/yyy.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yyy/yyy.html" afterPath="$PROJECT_DIR$/yyy/yyy.html" />
     </list>
     <ignored path="activity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,275 +22,103 @@
     <favorites_list name="activity" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5708283">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="yyy.html" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/yyy/yyy.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
-                  <caret line="168" column="47" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
-                  <folding>
-                    <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                    <element signature="e#5882#6039#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="preVideo.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/preVideo.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="507">
-                  <caret line="76" column="16" selection-start-line="71" selection-start-column="8" selection-end-line="76" selection-end-column="16" />
-                  <folding>
-                    <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="slip.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/common/js/slip.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="people_card2.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card2.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="people_card3.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card3.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="video_font.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/video_font.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="black_people.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/black_people.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="people_card1.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card1.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="border.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/border.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="yyy.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="172">
-                  <caret line="309" column="15" selection-start-line="309" selection-start-column="15" selection-end-line="309" selection-end-column="15" />
-                  <folding>
-                    <element signature="e#157#271#0" expanded="false" />
-                    <element signature="e#292#398#0" expanded="false" />
-                    <element signature="e#450#670#0" expanded="false" />
-                    <element signature="e#722#942#0" expanded="false" />
-                    <element signature="e#992#1104#0" expanded="false" />
-                    <element signature="e#1105#1342#0" expanded="false" />
-                    <element signature="e#1343#1572#0" expanded="false" />
-                    <element signature="e#8010#9022#0" expanded="false" />
-                    <element signature="e#9028#9089#0" expanded="false" />
-                    <element signature="e#9096#9294#0" expanded="false" />
-                    <element signature="e#9304#9366#0" expanded="false" />
-                    <element signature="e#9377#10312#0" expanded="false" />
-                    <element signature="e#10342#10412#0" expanded="false" />
-                    <element signature="e#10423#10566#0" expanded="false" />
-                    <element signature="e#10578#10743#0" expanded="false" />
-                    <element signature="e#10754#10898#0" expanded="false" />
-                    <element signature="e#10912#11039#0" expanded="false" />
-                    <element signature="e#11053#11184#0" expanded="false" />
-                    <element signature="e#11198#14435#0" expanded="false" />
-                    <element signature="e#11440#11646#0" expanded="false" />
-                    <marker date="1485169148000" expanded="true" signature="3028:3325" placeholder="..." />
-                    <marker date="1485169148000" expanded="true" signature="3035:3179" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="3345:3640" placeholder="..." />
-                    <marker date="1485169148000" expanded="true" signature="3352:3494" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="3664:3953" placeholder="..." />
-                    <marker date="1485169148000" expanded="true" signature="3671:3813" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="3976:4261" placeholder="..." />
-                    <marker date="1485169148000" expanded="true" signature="3983:4121" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="4128:4259" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="4284:4571" placeholder="..." />
-                    <marker date="1485169148000" expanded="true" signature="4291:4431" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="4438:4569" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="4594:4879" placeholder="..." />
-                    <marker date="1485169148000" expanded="true" signature="4601:4739" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="4746:4877" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="true" signature="8344:9018" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="false" signature="11215:11422" placeholder="{...}" />
-                    <marker date="1485169148000" expanded="false" signature="11663:11872" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="yyy.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="370">
-                  <caret line="728" column="5" selection-start-line="728" selection-start-column="5" selection-end-line="728" selection-end-column="5" />
-                  <folding>
-                    <element signature="e#157#271#0" expanded="false" />
-                    <element signature="e#292#398#0" expanded="false" />
-                    <element signature="e#450#670#0" expanded="false" />
-                    <element signature="e#722#942#0" expanded="false" />
-                    <element signature="e#992#1104#0" expanded="false" />
-                    <element signature="e#1105#1342#0" expanded="false" />
-                    <element signature="e#1343#1572#0" expanded="false" />
-                    <element signature="e#1574#1979#0" expanded="false" />
-                    <element signature="e#1980#2377#0" expanded="false" />
-                    <element signature="e#2379#2693#0" expanded="false" />
-                    <element signature="e#2694#3008#0" expanded="false" />
-                    <element signature="e#3009#3325#0" expanded="false" />
-                    <element signature="e#3326#3640#0" expanded="false" />
-                    <element signature="e#3642#3953#0" expanded="false" />
-                    <element signature="e#3954#4261#0" expanded="false" />
-                    <element signature="e#4262#4571#0" expanded="false" />
-                    <element signature="e#4880#5189#0" expanded="false" />
-                    <element signature="e#5908#6362#0" expanded="false" />
-                    <element signature="e#5941#6164#0" expanded="false" />
-                    <element signature="e#6363#6809#0" expanded="false" />
-                    <element signature="e#6812#6988#0" expanded="false" />
-                    <element signature="e#7022#7067#0" expanded="false" />
-                    <element signature="e#7077#7130#0" expanded="false" />
-                    <element signature="e#7616#7941#0" expanded="false" />
-                    <element signature="e#7948#14437#0" expanded="false" />
-                    <element signature="e#8096#8324#0" expanded="false" />
-                    <element signature="e#9028#9089#0" expanded="false" />
-                    <element signature="e#9096#9294#0" expanded="false" />
-                    <element signature="e#9304#9366#0" expanded="false" />
-                    <element signature="e#9720#9776#0" expanded="false" />
-                    <element signature="e#9787#9816#0" expanded="false" />
-                    <element signature="e#10342#10412#0" expanded="false" />
-                    <element signature="e#10423#10566#0" expanded="false" />
-                    <element signature="e#10578#10743#0" expanded="false" />
-                    <element signature="e#10754#10898#0" expanded="false" />
-                    <element signature="e#10912#11039#0" expanded="false" />
-                    <element signature="e#11053#11184#0" expanded="false" />
-                    <element signature="e#11440#11646#0" expanded="false" />
-                    <element signature="e#11663#11872#0" expanded="false" />
-                    <element signature="e#11889#12099#0" expanded="false" />
-                    <element signature="e#12116#12329#0" expanded="false" />
-                    <element signature="e#12347#12564#0" expanded="false" />
-                    <element signature="e#12582#12799#0" expanded="false" />
-                    <element signature="e#14909#14971#0" expanded="false" />
-                    <element signature="e#15369#15946#0" expanded="false" />
-                    <element signature="e#16780#16869#0" expanded="false" />
-                    <marker date="1485169148000" expanded="false" signature="5782:5906" placeholder="..." />
-                    <marker date="1485169148000" expanded="false" signature="14982:15355" placeholder="{...}" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="answer.html" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/answer.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="198">
-                  <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-                  <folding>
-                    <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="answer.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/css/answer.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2838">
-                  <caret line="147" column="7" selection-start-line="147" selection-start-column="2" selection-end-line="147" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#220#0" expanded="false" />
-                    <element signature="e#221#433#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="title.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/title.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="page1-bg.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/page1-bg.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bottom_font.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/bottom_font.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="bottom_bg.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/bottom_bg.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="people_card4.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card4.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="people_card5.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card5.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="people_card7.png" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card7.png">
-              <provider selected="true" editor-type-id="images">
-                <state />
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="yyy.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yyy/yyy.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1286">
+              <caret line="76" column="4" selection-start-line="177" selection-start-column="0" selection-end-line="178" selection-end-column="13" />
+              <folding>
+                <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yyy.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12126">
+              <caret line="696" column="14" selection-start-line="696" selection-start-column="14" selection-end-line="696" selection-end-column="14" />
+              <folding>
+                <element signature="e#450#670#0" expanded="false" />
+                <marker date="1485169737000" expanded="false" signature="157:271" placeholder="{...}" />
+                <marker date="1485169737000" expanded="false" signature="292:398" placeholder="{...}" />
+                <marker date="1485169737000" expanded="false" signature="722:942" placeholder="{...}" />
+                <marker date="1485169737000" expanded="false" signature="992:1104" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="answerA.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yyy/answerA.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="answerB.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yyy/answerB.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="answerA.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yyy/css/answerA.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="326">
+              <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+              <folding>
+                <element signature="e#266#319#0" expanded="false" />
+                <element signature="e#332#422#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170111041027950.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yyy/images/dui/20170111041027950.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="20170111041045312.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yyy/images/dui/20170111041045312.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="animation.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/css/animation.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="animation.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/common/animation.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -313,12 +138,11 @@
         <option value="$PROJECT_DIR$/SDBargain/css/home.scss" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/common/css/animation.scss" />
-        <option value="$PROJECT_DIR$/yyy/answer.html" />
-        <option value="$PROJECT_DIR$/yyy/css/answer.scss" />
-        <option value="$PROJECT_DIR$/common/js/slip.js" />
-        <option value="$PROJECT_DIR$/yyy/preVideo.html" />
-        <option value="$PROJECT_DIR$/yyy/css/yyy.scss" />
         <option value="$PROJECT_DIR$/yyy/yyy.html" />
+        <option value="$PROJECT_DIR$/yyy/answerA.html" />
+        <option value="$PROJECT_DIR$/yyy/css/answerA.scss" />
+        <option value="$PROJECT_DIR$/yyy/answerB.html" />
+        <option value="$PROJECT_DIR$/yyy/css/yyy.scss" />
       </list>
     </option>
   </component>
@@ -328,10 +152,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="5" />
-    <option name="y" value="37" />
-    <option name="width" value="1920" />
-    <option name="height" value="999" />
+    <option name="x" value="4" />
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -358,7 +182,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -455,31 +279,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -492,7 +298,6 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/yyy/images" />
-      <recent name="$PROJECT_DIR$/yyy/images/preVideo" />
       <recent name="$PROJECT_DIR$/yyy/images/dui" />
     </key>
   </component>
@@ -570,7 +375,8 @@
       <workItem from="1482458218345" duration="972000" />
       <workItem from="1482482082153" duration="12000" />
       <workItem from="1484797002929" duration="1834000" />
-      <workItem from="1485055946364" duration="3111000" />
+      <workItem from="1485055946364" duration="3503000" />
+      <workItem from="1485071915757" duration="14829000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
       <created>1485056346541</created>
@@ -586,55 +392,48 @@
       <option name="project" value="LOCAL" />
       <updated>1485069825567</updated>
     </task>
-    <task id="LOCAL-00003" summary="视频活动">
-      <created>1485158286805</created>
+    <task id="LOCAL-00003" summary="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1485070508225</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1485158286805</updated>
+      <updated>1485070508225</updated>
     </task>
-    <task id="LOCAL-00004" summary="更改动画效果">
-      <created>1485158660722</created>
+    <task id="LOCAL-00004" summary="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1485161197350</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1485158660722</updated>
+      <updated>1485161197350</updated>
     </task>
-    <task id="LOCAL-00005" summary="结果页面">
-      <created>1485161523806</created>
+    <task id="LOCAL-00005" summary="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1485169672053</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1485161523806</updated>
+      <updated>1485169672053</updated>
     </task>
-    <task id="LOCAL-00006" summary="集成两屏">
-      <created>1485168468014</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1485168468014</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29737000" />
+    <option name="totallyTimeSpent" value="29284000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="5" y="37" width="1920" height="999" extended-state="0" />
+    <frame x="4" y="23" width="1280" height="773" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.122696154" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20730738" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3351709" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3352855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23042999" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23201175" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -655,20 +454,149 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
-    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
-    <MESSAGE value="视频活动" />
-    <MESSAGE value="更改动画效果" />
-    <MESSAGE value="结果页面" />
-    <MESSAGE value="集成两屏" />
-    <option name="LAST_COMMIT_MESSAGE" value="集成两屏" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/appBargain/css/assist.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4440">
+          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="268" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appBargain/css/end.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appBargain/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appBargain/css/success.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/beauty.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xlxs.html" />
+    <entry file="file://$PROJECT_DIR$/nationalDay/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="383" column="50" selection-start-line="383" selection-start-column="50" selection-end-line="383" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nationalDay/index_app.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nationalDay/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="214" column="4" selection-start-line="214" selection-start-column="4" selection-end-line="214" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html" />
+    <entry file="file://$PROJECT_DIR$/../wechat/master-Q3/css/freebuy_productLists.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/appdownload.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDBargain/views/home.html" />
+    <entry file="file://$PROJECT_DIR$/SDBargain/css/home.scss" />
+    <entry file="file://$PROJECT_DIR$/css/appdownload.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="66" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SDBargain/css/common.scss" />
+    <entry file="file://$PROJECT_DIR$/../wechat/master-Q3/css/freebuy_productLists.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="8" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appBargain/view/success.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/appdownload.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nationalDay/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="1" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/products.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toUse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="25" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../master-Q2-5/views/result.html" />
+    <entry file="file://$PROJECT_DIR$/appBargain/view/invite.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../master-Q2-5/css/actPageCover.scss" />
     <entry file="file://$PROJECT_DIR$/SDBargain/css/common.scss" />
     <entry file="file://$PROJECT_DIR$/SDBargain/css/home.scss" />
     <entry file="file://$PROJECT_DIR$/SDBargain/views/home.html" />
@@ -731,6 +659,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -738,6 +667,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="10" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -746,7 +678,29 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/dui/20170111041002360.png" />
+    <entry file="file://$PROJECT_DIR$/yyy/images/border.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yyy/images/page1-bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yyy/images/dui/20170111041002360.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yyy/images/dui/20170111041027950.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -761,248 +715,65 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/common/css/animation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        <state relative-caret-position="280">
+          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/music_on.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/music_off.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/flyCard/zhi5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/black_people.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/flyCard/zhi4.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/20170111034208632.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/toViewVideo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/skipVideoBg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/skipVideo.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/flyCard/zhi6.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/dog2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card3.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card4.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card5.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/people_card7.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/title.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/page1-bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/bottom_bg.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/bottom_font.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/border.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/preVideo/video_font.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/bottom_font_move.gif">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/flyCard/zhi14.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/images/cover.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/answer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/common/js/slip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/css/answer.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2838">
-          <caret line="147" column="7" selection-start-line="147" selection-start-column="2" selection-end-line="147" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#220#0" expanded="false" />
-            <element signature="e#221#433#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/preVideo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="76" column="16" selection-start-line="71" selection-start-column="8" selection-end-line="76" selection-end-column="16" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="309" column="15" selection-start-line="309" selection-start-column="15" selection-end-line="309" selection-end-column="15" />
-          <folding>
-            <element signature="e#157#271#0" expanded="false" />
-            <element signature="e#292#398#0" expanded="false" />
-            <element signature="e#450#670#0" expanded="false" />
-            <element signature="e#722#942#0" expanded="false" />
-            <element signature="e#992#1104#0" expanded="false" />
-            <element signature="e#1105#1342#0" expanded="false" />
-            <element signature="e#1343#1572#0" expanded="false" />
-            <element signature="e#8010#9022#0" expanded="false" />
-            <element signature="e#9028#9089#0" expanded="false" />
-            <element signature="e#9096#9294#0" expanded="false" />
-            <element signature="e#9304#9366#0" expanded="false" />
-            <element signature="e#9377#10312#0" expanded="false" />
-            <element signature="e#10342#10412#0" expanded="false" />
-            <element signature="e#10423#10566#0" expanded="false" />
-            <element signature="e#10578#10743#0" expanded="false" />
-            <element signature="e#10754#10898#0" expanded="false" />
-            <element signature="e#10912#11039#0" expanded="false" />
-            <element signature="e#11053#11184#0" expanded="false" />
-            <element signature="e#11198#14435#0" expanded="false" />
-            <element signature="e#11440#11646#0" expanded="false" />
-            <marker date="1485169148000" expanded="true" signature="3028:3325" placeholder="..." />
-            <marker date="1485169148000" expanded="true" signature="3035:3179" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="3345:3640" placeholder="..." />
-            <marker date="1485169148000" expanded="true" signature="3352:3494" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="3664:3953" placeholder="..." />
-            <marker date="1485169148000" expanded="true" signature="3671:3813" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="3976:4261" placeholder="..." />
-            <marker date="1485169148000" expanded="true" signature="3983:4121" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="4128:4259" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="4284:4571" placeholder="..." />
-            <marker date="1485169148000" expanded="true" signature="4291:4431" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="4438:4569" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="4594:4879" placeholder="..." />
-            <marker date="1485169148000" expanded="true" signature="4601:4739" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="4746:4877" placeholder="{...}" />
-            <marker date="1485169148000" expanded="true" signature="8344:9018" placeholder="{...}" />
-            <marker date="1485169148000" expanded="false" signature="11215:11422" placeholder="{...}" />
-            <marker date="1485169148000" expanded="false" signature="11663:11872" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yyy/yyy.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="168" column="47" selection-start-line="168" selection-start-column="47" selection-end-line="168" selection-end-column="47" />
+        <state relative-caret-position="1286">
+          <caret line="76" column="4" selection-start-line="177" selection-start-column="0" selection-end-line="178" selection-end-column="13" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#5882#6039#0" expanded="false" />
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yyy/css/answerA.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="38" column="3" selection-start-line="38" selection-start-column="3" selection-end-line="38" selection-end-column="3" />
+          <folding>
+            <element signature="e#266#319#0" expanded="false" />
+            <element signature="e#332#422#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yyy/answerA.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="15" column="30" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yyy/answerB.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12126">
+          <caret line="696" column="14" selection-start-line="696" selection-start-column="14" selection-end-line="696" selection-end-column="14" />
+          <folding>
+            <element signature="e#450#670#0" expanded="false" />
+            <marker date="1485169737000" expanded="false" signature="157:271" placeholder="{...}" />
+            <marker date="1485169737000" expanded="false" signature="292:398" placeholder="{...}" />
+            <marker date="1485169737000" expanded="false" signature="722:942" placeholder="{...}" />
+            <marker date="1485169737000" expanded="false" signature="992:1104" placeholder="{...}" />
           </folding>
         </state>
       </provider>
