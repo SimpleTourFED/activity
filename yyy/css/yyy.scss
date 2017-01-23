@@ -603,11 +603,13 @@ html,body{
     width: 100%;
     bottom: 0;
     z-index: 5;
+    -webkit-transform: translate3d(0,200%,0);
+    transform: translate3d(0,200%,0);
     &.riseUp{
       position: absolute;
       z-index: 10;
-      -webkit-animation:riseUp ease-out 1s both;
-      animation:riseUp ease-out 1s both;
+      -webkit-animation:riseUp ease-out 1s forwards;
+      animation:riseUp ease-out 1s forwards;
     }
   }
   .border{
@@ -672,6 +674,7 @@ html,body{
     top: 27%;
     right: 7%;
     z-index: 4;
+    opacity: 0;
     &.gradual {
       -webkit-animation:gradual ease-in 2s forwards;
       animation:gradual ease-out 2s forwards;
@@ -683,6 +686,7 @@ html,body{
     top: 3%;
     right: 7%;
     z-index: 4;
+    opacity: 0;
     &.gradual {
       -webkit-animation:gradual ease-out .7s forwards;
       animation:gradual ease-out .7s forwards;
@@ -694,6 +698,7 @@ html,body{
     top: 3%;
     left: 7%;
     z-index: 4;
+    opacity: 0;
     &.gradual {
       -webkit-animation:gradual ease-in 1.5s forwards;
       animation:gradual ease-in 1.5s forwards;
@@ -705,6 +710,11 @@ html,body{
     top: 3%;
     left: 66%;
     z-index: 4;
+    opacity: 0;
+    &.gradual {
+      -webkit-animation:gradual ease-in 1s forwards;
+      animation:gradual ease-in 1s forwards;
+    }
   }
   .people_card5 {
     position: absolute;
@@ -712,6 +722,7 @@ html,body{
     top: 27%;
     left: 7%;
     z-index: 4;
+    opacity: 0;
     &.gradual {
       -webkit-animation:gradual ease-in 1s forwards;
       animation:gradual ease-in 1s forwards;
@@ -723,6 +734,7 @@ html,body{
     top: 3%;
     left: 46%;
     z-index: 4;
+    opacity: 0;
     &.gradual {
       -webkit-animation:gradual ease-in 1s forwards;
       animation:gradual ease-in 1s forwards;
@@ -734,6 +746,7 @@ html,body{
     top: 3%;
     left: 26%;
     z-index: 4;
+    opacity: 0;
     &.gradual {
       -webkit-animation:gradual ease .5s forwards;
       animation:gradual ease .5s forwards;

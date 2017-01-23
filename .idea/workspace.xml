@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60bdac5d-f4f6-45d4-b835-0fba4a724404" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yyy/css/yyy.scss" afterPath="$PROJECT_DIR$/yyy/css/yyy.scss" />
     </list>
     <ignored path="activity.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="yyy.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/yyy/yyy.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1286">
-              <caret line="76" column="4" selection-start-line="177" selection-start-column="0" selection-end-line="178" selection-end-column="13" />
+            <state relative-caret-position="1306">
+              <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
               <folding>
                 <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
               </folding>
@@ -38,14 +39,14 @@
       <file leaf-file-name="yyy.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12126">
-              <caret line="696" column="14" selection-start-line="696" selection-start-column="14" selection-end-line="696" selection-end-column="14" />
+            <state relative-caret-position="199">
+              <caret line="716" column="5" selection-start-line="716" selection-start-column="5" selection-end-line="716" selection-end-column="5" />
               <folding>
                 <element signature="e#450#670#0" expanded="false" />
-                <marker date="1485169737000" expanded="false" signature="157:271" placeholder="{...}" />
-                <marker date="1485169737000" expanded="false" signature="292:398" placeholder="{...}" />
-                <marker date="1485169737000" expanded="false" signature="722:942" placeholder="{...}" />
-                <marker date="1485169737000" expanded="false" signature="992:1104" placeholder="{...}" />
+                <marker date="1485170567000" expanded="false" signature="157:271" placeholder="{...}" />
+                <marker date="1485170567000" expanded="false" signature="292:398" placeholder="{...}" />
+                <marker date="1485170567000" expanded="false" signature="722:942" placeholder="{...}" />
+                <marker date="1485170567000" expanded="false" signature="992:1104" placeholder="{...}" />
               </folding>
             </state>
           </provider>
@@ -376,7 +377,7 @@
       <workItem from="1482482082153" duration="12000" />
       <workItem from="1484797002929" duration="1834000" />
       <workItem from="1485055946364" duration="3503000" />
-      <workItem from="1485071915757" duration="14829000" />
+      <workItem from="1485071915757" duration="15652000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
       <created>1485056346541</created>
@@ -413,11 +414,18 @@
       <option name="project" value="LOCAL" />
       <updated>1485169672053</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Merge branch 'master' of github.com:SimpleTourFED/activity&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml&#10;">
+      <created>1485169788323</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1485169788323</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29284000" />
+    <option name="totallyTimeSpent" value="30107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="4" y="23" width="1280" height="773" extended-state="6" />
@@ -427,7 +435,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3352855" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33480176" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23201175" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -727,16 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yyy/yyy.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1286">
-          <caret line="76" column="4" selection-start-line="177" selection-start-column="0" selection-end-line="178" selection-end-column="13" />
-          <folding>
-            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/yyy/css/answerA.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -764,16 +762,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/yyy/yyy.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1306">
+          <caret line="76" column="4" selection-start-line="76" selection-start-column="4" selection-end-line="76" selection-end-column="4" />
+          <folding>
+            <element signature="n#script#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yyy/css/yyy.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12126">
-          <caret line="696" column="14" selection-start-line="696" selection-start-column="14" selection-end-line="696" selection-end-column="14" />
+        <state relative-caret-position="199">
+          <caret line="716" column="5" selection-start-line="716" selection-start-column="5" selection-end-line="716" selection-end-column="5" />
           <folding>
             <element signature="e#450#670#0" expanded="false" />
-            <marker date="1485169737000" expanded="false" signature="157:271" placeholder="{...}" />
-            <marker date="1485169737000" expanded="false" signature="292:398" placeholder="{...}" />
-            <marker date="1485169737000" expanded="false" signature="722:942" placeholder="{...}" />
-            <marker date="1485169737000" expanded="false" signature="992:1104" placeholder="{...}" />
+            <marker date="1485170567000" expanded="false" signature="157:271" placeholder="{...}" />
+            <marker date="1485170567000" expanded="false" signature="292:398" placeholder="{...}" />
+            <marker date="1485170567000" expanded="false" signature="722:942" placeholder="{...}" />
+            <marker date="1485170567000" expanded="false" signature="992:1104" placeholder="{...}" />
           </folding>
         </state>
       </provider>
