@@ -1036,6 +1036,7 @@ html,body{
     }
     .cover-content {
       position: absolute;
+      display: none;
       top: 30%;
       left: 0;
       width: 100%;
@@ -1061,16 +1062,16 @@ html,body{
       }
       &.in{
         opacity: 1;
-        -webkit-transition-duration:1500ms;
-        transition-duration: 1500ms;
+        -webkit-transition-duration:1000ms;
+        transition-duration: 1000ms;
         -webkit-transform:translate3d(0,0,0) scale(1);
         transform: translate3d(0,0,0) scale(1);
       }
       &.out{
         opacity: 0;
         z-index: 10999;
-        -webkit-transition-duration: 1500ms;
-        transition-duration: 1500ms;
+        -webkit-transition-duration: 500ms;
+        transition-duration: 500ms;
         -webkit-transform: translate3d(0, 0, 0) scale(0.815);
         transform: translate3d(0, 0, 0) scale(0.815);
       }
@@ -1271,7 +1272,7 @@ html,body{
   .dui_icon {
     position: absolute;
     width: 16%;
-    bottom: 7rem;
+    bottom: 12rem;
     z-index: 11;
     left: 50%;
     margin-left: -8%;

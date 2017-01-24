@@ -300,16 +300,19 @@
             $('.play_btn').click(function() {
                 $('.play_btn').hide();
                 $('.page2 .cover').removeClass('hide');
-                $('.page2 .cover-content').removeClass('out').addClass('in');
+                $('.page2 .cover-content').show().removeClass('out').addClass('in');
             });
 
             $('.cover-content .later').click(function() {
                 $('.page2 .cover').addClass('hide');
-                $('.page2 .cover-content').removeClass('in').addClass('out');
+                $('.page2 .cover-content').hide().removeClass('in').addClass('out');
                 $('.play_btn').show();
             });
             $('.cover-content .now').click(function() {
                 $('#video')[0].play();
+                $('.play_btn').show();
+                $('.page2 .cover').addClass('hide');
+                $('.page2 .cover-content').hide().removeClass('in').addClass('out');
             });
             $('.loading .loading_btn').click(function() {
                 $('.loading').hide();
