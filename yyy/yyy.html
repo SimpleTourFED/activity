@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="/yyy/css/yyy.scss">
 </head>
 <body>
+<div class="loading">
+
+</div>
+<video id="video" width="0" height="0" media="handheld" src="https://videos.simpletour.com/simpletour_year_mv.mov"></video>
     <div class="pages" id="pages">
         <!--<div class="audio on"></div>-->
         <!--<audio id="audio" autoplay="" loop="loop" style="display:none" controls="">-->
@@ -18,11 +22,15 @@
         <div class="page page1 current">
             <div class="page-content">
                 <div class="cover hide"></div>
-                <div class="cover-content out">
+                <div class="cover-content">
                     <img src="/yyy/images/title.png" alt="">
                 </div>
                 <img src="/yyy/images/page1-bg.png" class="bg">
-                <img src="/yyy/images/dog1.gif" class="dog">
+                <img src="/yyy/images/dog1.gif" class="dog"/>
+                <img src="/yyy/images/dog2.png" style="display: none" />
+                <img src="/yyy/images/dog3.png" style="display: none" />
+                <img src="/yyy/images/dog4.png" style="display: none" />
+                <img src="/yyy/images/dog5.png" style="display: none" />
                 <img src="/yyy/images/border.png" class="border">
                 <div class="bottom">
                     <img src="/yyy/images/bottom_font.png" class="bottom_font png hide">
@@ -64,6 +72,12 @@
 
         <div class="page page2">
             <div class="page-content">
+                <div class="cover hide"></div>
+                <div class="cover-content">
+                    <img src="/yyy/images/confirm_modal.png" alt="">
+                    <div class="later"></div>
+                    <div class="now"></div>
+                </div>
                 <img src="/yyy/images/page1-bg.png" class="bg">
                 <img src="/yyy/images/preVideo/black_people.png" class="black_people">
                 <img src="/yyy/images/border.png" class="border">
@@ -79,11 +93,21 @@
                 <div class="bottom">
                     <img src="/yyy/images/preVideo/skipVideo.png" class="bottom_font">
                 </div>
-                <!--<video style="position: absolute;z-index:100;" src="https://videos.simpletour.com/simpletour_year_mv.mov" controls="controls"></video>-->
             </div>
         </div>
 
-        <div class="page page3 ">
+        <div class="page page3">
+            <div class="page-content">
+                <img src="/yyy/images/dui/dui_bg.png" class="bg">
+                <img src="/yyy/images/border.png" class="border">
+                <img src="/yyy/images/dui/font_dui.png" class="font_dui out">
+                <div class="bottom">
+                    <img src="/yyy/images/dui/bottom_go_test.png" class="bottom_font">
+                </div>
+            </div>
+        </div>
+
+        <div class="page page4 ">
             <div class="page-content">
                 <img src="/yyy/images/page1-bg.png" class="bg">
                 <img src="/yyy/images/q-1.png" alt="" class="head">
@@ -97,74 +121,74 @@
                 <img src="/yyy/images/q-6.png" class="typewriter">
                 <img src="/yyy/images/q-7.png" class="left">
                 <img src="/yyy/images/q-7.png" class="right">
-
-                <div class="question" id="question1" data-index="1">
+                <div class="question" id="question1" data-index="1" data-answer="yes">
                     <img src="/yyy/images/question1.png">
                     <div class="color1 hide"></div>
                     <div class="color2 hide"></div>
-                    <div class="first"></div>
-                    <div class="second"></div>
+                    <div class="radio first" data-option="yes"></div>
+                    <div class="radio second" data-option="no"></div>
                 </div>
 
-                <div class="question" id="question2" data-index="2">
+                <div class="question" id="question2" data-index="2" data-answer="yes">
                     <img src="/yyy/images/question2.png">
                     <div class="color1 hide"></div>
                     <div class="color2 hide"></div>
-                    <div class="first"></div>
-                    <div class="second"></div>
+                    <div class="radio first" data-option="yes"></div>
+                    <div class="radio second" data-option="no"></div>
                 </div>
 
-                <div class="question" id="question3" data-index="3">
+                <div class="question" id="question3" data-index="3" data-answer="yes">
                     <img src="/yyy/images/question3.png">
                     <div class="color1 hide"></div>
                     <div class="color2 hide"></div>
-                    <div class="first"></div>
-                    <div class="second"></div>
+                    <div class="radio first" data-option="yes"></div>
+                    <div class="radio second" data-option="no"></div>
                 </div>
 
-                <div class="question" id="question4" data-index="4">
+                <div class="question" id="question4" data-index="4" data-answer="no">
                     <img src="/yyy/images/question4.png">
                     <div class="color1 hide"></div>
                     <div class="color2 hide"></div>
-                    <div class="first"></div>
-                    <div class="second"></div>
+                    <div class="radio first" data-option="yes"></div>
+                    <div class="radio second" data-option="no"></div>
                 </div>
 
-                <div class="question" id="question5" data-index="5">
+                <div class="question" id="question5" data-index="5" data-answer="no">
                     <img src="/yyy/images/question5.png">
                     <div class="color1 hide"></div>
                     <div class="color2 hide"></div>
-                    <div class="first"></div>
-                    <div class="second"></div>
+                    <div class="radio first" data-option="yes"></div>
+                    <div class="radio second" data-option="no"></div>
                 </div>
 
-                <div class="question" id="question6" data-index="6">
+                <div class="question" id="question6" data-index="6" data-answer="yes">
                     <img src="/yyy/images/question6.png">
                     <div class="color1 hide"></div>
                     <div class="color2 hide"></div>
-                    <div class="first"></div>
-                    <div class="second"></div>
+                    <div class="radio first" data-option="yes"></div>
+                    <div class="radio second" data-option="no"></div>
                 </div>
 
-                <div class="question" id="question7" data-index="7">
+                <div class="question" id="question7" data-index="7" data-answer="no">
                     <img src="/yyy/images/question7.png">
                     <div class="color1 hide"></div>
                     <div class="color2 hide"></div>
-                    <div class="first"></div>
-                    <div class="second"></div>
+                    <div class="radio first" data-option="yes"></div>
+                    <div class="radio second" data-option="no"></div>
                 </div>
 
-                <div class="question" id="question8" data-index="8">
+                <div class="question" id="question8" data-index="8" data-answer="yes">
                     <img src="/yyy/images/question8.png">
                     <div class="color1 hide"></div>
                     <div class="color2 hide"></div>
-                    <div class="first"></div>
-                    <div class="second"></div>
+                    <div class="radio first" data-option="yes"></div>
+                    <div class="radio second" data-option="no"></div>
                 </div>
             </div>
         </div>
     </div>
     <script src="/common/js/zepto.min.js"></script>
+    <script type="text/javascript" src="/common/js/imgLoader.js"></script>
     <script>
         (function (doc, win) {
             var docEl = doc.documentElement,
@@ -187,6 +211,51 @@
             doc.addEventListener('DOMContentLoaded', recalc, false);
         })(document, window);
         $(document).ready(function() {
+            var loader = new imgLoader({
+                backgroundResources:[
+                    "/yyy/images/page1-bg.png",
+                    "/yyy/images/dog1.gif",
+                    "/yyy/images/border.png",
+                    "/yyy/images/bottom_font.png",
+                    "/yyy/images/bottom_font_move.gif",
+                    "/yyy/images/flyCard/zhi1.png",
+                    "/yyy/images/flyCard/zhi2.png",
+                    "/yyy/images/flyCard/zhi3.png",
+                    "/yyy/images/flyCard/zhi4.png",
+                    "/yyy/images/flyCard/zhi5.png",
+                    "/yyy/images/flyCard/zhi6.png",
+                    "/yyy/images/flyCard/zhi7.png",
+                    "/yyy/images/flyCard/zhi8.png",
+                    "/yyy/images/flyCard/zhi9.png",
+                    "/yyy/images/flyCard/zhi10.png",
+                    "/yyy/images/flyCard/zhi11.png",
+                    "/yyy/images/flyCard/zhi12.png",
+                ],
+                onStart : function(total){
+                },
+                onProgress : function(current,total){
+                    var percent = current/total;
+                    $('.bar').width(11.4*percent+'rem');
+                    if(percent==0.25 || percent==1){
+                        $('.bar .bus').css('right','0');
+                    }
+                },
+                onComplete: function() {
+                    $('.loading').hide();
+                    setTimeout(function(){
+                        animation($('.zhi1'),1)
+                                .then(function(){return animation($('.zhi2'),2) })
+                                .then(function(){return animation($('.zhi3'),3) })
+                                .then(function(){return animation($('.zhi4'),4) })
+                                .then(function(){return animation($('.zhi4'),5) })
+                                .then(function(){return animation($('.zhi4'),6) })
+                                .then(function() {
+
+                                })
+                    },3000);
+                }
+            });
+            loader.start();
             var Promise = window.Promise;
             var docWidth = $(document).width()-16;
             var docHeight = $(document).height()-16;
@@ -207,8 +276,8 @@
                                 resolve();
                             } else if(index == 6) {
                                 setTimeout(function() {
-                                    $('.cover').removeClass('hide');
-                                    $('.cover-content').removeClass('out').addClass('in');
+                                    $('.page1 .cover').removeClass('hide');
+                                    $('.page1 .cover-content').removeClass('out').addClass('in');
                                     $('.bottom .png').hide();
                                     $('.bottom .gif').removeClass('hide').addClass('show');
                                     resolve();
@@ -232,17 +301,21 @@
                     move()
                 })
             };
-            setTimeout(function(){
-                animation($('.zhi1'),1)
-                        .then(function(){return animation($('.zhi2'),2) })
-                        .then(function(){return animation($('.zhi3'),3) })
-                        .then(function(){return animation($('.zhi4'),4) })
-                        .then(function(){return animation($('.zhi4'),5) })
-                        .then(function(){return animation($('.zhi4'),6) })
-                        .then(function() {
 
-                        })
-            },3000);
+            $('.play_btn').click(function() {
+                $('.play_btn').hide();
+                $('.page2 .cover').removeClass('hide');
+                $('.page2 .cover-content').removeClass('out').addClass('in');
+            });
+
+            $('.cover-content .later').click(function() {
+                $('.page2 .cover').addClass('hide');
+                $('.page2 .cover-content').removeClass('in').addClass('out');
+                $('.play_btn').hide();
+            });
+            $('.cover-content .now').click(function() {
+                $('#video')[0].play();
+            });
 
             $('.bottom_font.gif').click(function() {
                 $('.page1').removeClass('current').addClass('prev');
@@ -269,13 +342,13 @@
 
             $('.page2 .bottom').click(function() {
                 $('.page2').removeClass('current').addClass('prev');
-                $('.page3').addClass('current');
+                $('.page4').addClass('current');
                 setTimeout(function() {
                     $('.typewriter').addClass('up');
                     setTimeout(function() {
-                        $('.page3 .right').addClass('up');
-                        $('.page3 .left').addClass('up');
-                        $('.page3 #question1').addClass('up');
+                        $('.page4 .right').addClass('up');
+                        $('.page4 .left').addClass('up');
+                        $('.page4 #question1').addClass('up');
                     },500);
 
                 },1000);
@@ -283,33 +356,37 @@
 
             var count = 1;
             function questionAnimation(index) {
-                $('.page3 .right').removeClass('exchange');
-                $('.page3 .left').removeClass('exchange');
+                $('.page4 .right').removeClass('exchange');
+                $('.page4 .left').removeClass('exchange');
                 setTimeout(function(){
                     $('#question'+index).removeClass('up').addClass('down');
-                    $('.page3 .right').addClass('exchange');
-                    $('.page3 .left').addClass('exchange');
+                    $('.page4 .right').addClass('exchange');
+                    $('.page4 .left').addClass('exchange');
                     setTimeout(function() {
                         $('#question'+(+index+1)).addClass('up');
                         count = 1;
                     },500);
                 },500);
             }
-
-            $('.question .first').click(function() {
+            var score = 0;
+            $('.question .radio').click(function() {
                 if(count === 1) {
+                    var $this = $(this);
                     var $question = $(this).parents('.question');
-                    $question.find('.color1').removeClass('hide');
+                    if($this.attr('data-option') == 'yes') {
+                        $question.find('.color1').removeClass('hide');
+                    } else {
+                        $question.find('.color2').removeClass('hide');
+                    }
                     count++;
-                    questionAnimation($question.attr('data-index'));
-                }
-            });
-            $('.question .second').click(function() {
-                if(count === 1) {
-                    var $question = $(this).parents('.question');
-                    $question.find('.color2').removeClass('hide');
-                    count++;
-                    questionAnimation($question.attr('data-index'));
+                    if($question.attr('data-answer') == $(this).attr('data-option')) {
+                        score++;
+                    }
+                    if($question.attr('data-index') == 8) {
+                        alert(score);
+                    } else {
+                        questionAnimation($question.attr('data-index'));
+                    }
                 }
             });
         });
