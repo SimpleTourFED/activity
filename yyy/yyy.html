@@ -27,7 +27,7 @@
         <!--<audio id="audio" autoplay="" loop="loop" style="display:none" controls="">-->
             <!--<source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">-->
         <!--</audio>-->
-        <div class="page page1">
+        <div class="page page1 current">
             <div class="page-content">
                 <div class="cover hide"></div>
                 <div class="cover-content">
@@ -104,10 +104,11 @@
             </div>
         </div>
 
-        <div class="page page3 current">
+        <div class="page page3">
             <div class="page-content">
                 <img src="/yyy/images/dui/dui_bg.png" class="bg">
                 <img src="/yyy/images/border.png" class="border">
+                <img src="/yyy/images/dui/dui_icon.png" class="dui_icon">
                 <img src="/yyy/images/dui/font_dui.png" class="font_dui out">
                 <div class="bottom">
                     <img src="/yyy/images/dui/bottom_go_test_font.gif" class="bottom_font">
@@ -305,7 +306,7 @@
             $('.cover-content .later').click(function() {
                 $('.page2 .cover').addClass('hide');
                 $('.page2 .cover-content').removeClass('in').addClass('out');
-                $('.play_btn').hide();
+                $('.play_btn').show();
             });
             $('.cover-content .now').click(function() {
                 $('#video')[0].play();
@@ -349,6 +350,11 @@
 
             $('.page2 .bottom').click(function() {
                 $('.page2').removeClass('current').addClass('prev');
+                $('.page3').addClass('current');
+                $('.page3 .font_dui').removeClass('out').addClass('in');
+            });
+            $('.page3 .bottom').click(function() {
+                $('.page3').removeClass('current').addClass('prev');
                 $('.page4').addClass('current');
                 setTimeout(function() {
                     $('.typewriter').addClass('up');
