@@ -11,7 +11,15 @@
 </head>
 <body>
 <div class="loading">
-
+    <div class="loading_gif">
+        <img src="/yyy/images/loading.gif" alt="">
+    </div>
+    <div class="progressBar">
+        <div class="bar"><span class="bus"></span></div>
+    </div>
+    <div class="loading_btn">
+        <img src="/yyy/images/loading-btn.gif" alt="">
+    </div>
 </div>
 <video id="video" width="0" height="0" media="handheld" src="https://videos.simpletour.com/simpletour_year_mv.mov"></video>
     <div class="pages" id="pages">
@@ -19,7 +27,7 @@
         <!--<audio id="audio" autoplay="" loop="loop" style="display:none" controls="">-->
             <!--<source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">-->
         <!--</audio>-->
-        <div class="page page1 current">
+        <div class="page page1">
             <div class="page-content">
                 <div class="cover hide"></div>
                 <div class="cover-content">
@@ -91,18 +99,18 @@
                 <img src="/yyy/images/preVideo/video_font.png" class="video_font out">
                 <img src="/yyy/images/preVideo/play.gif" alt="" class="play_btn">
                 <div class="bottom">
-                    <img src="/yyy/images/preVideo/skipVideo.png" class="bottom_font">
+                    <img src="/yyy/images/preVideo/skipVideo.gif" class="bottom_font">
                 </div>
             </div>
         </div>
 
-        <div class="page page3">
+        <div class="page page3 current">
             <div class="page-content">
                 <img src="/yyy/images/dui/dui_bg.png" class="bg">
                 <img src="/yyy/images/border.png" class="border">
                 <img src="/yyy/images/dui/font_dui.png" class="font_dui out">
                 <div class="bottom">
-                    <img src="/yyy/images/dui/bottom_go_test.png" class="bottom_font">
+                    <img src="/yyy/images/dui/bottom_go_test_font.gif" class="bottom_font">
                 </div>
             </div>
         </div>
@@ -235,24 +243,10 @@
                 },
                 onProgress : function(current,total){
                     var percent = current/total;
-                    $('.bar').width(11.4*percent+'rem');
-                    if(percent==0.25 || percent==1){
-                        $('.bar .bus').css('right','0');
-                    }
+                    $('.bar').css('transform', 'translate3d('+(-100+percent*100)+'%,0,0)');
                 },
                 onComplete: function() {
-                    $('.loading').hide();
-                    setTimeout(function(){
-                        animation($('.zhi1'),1)
-                                .then(function(){return animation($('.zhi2'),2) })
-                                .then(function(){return animation($('.zhi3'),3) })
-                                .then(function(){return animation($('.zhi4'),4) })
-                                .then(function(){return animation($('.zhi4'),5) })
-                                .then(function(){return animation($('.zhi4'),6) })
-                                .then(function() {
-
-                                })
-                    },3000);
+                    $('.loading .loading_btn').addClass('in');
                 }
             });
             loader.start();
@@ -316,7 +310,20 @@
             $('.cover-content .now').click(function() {
                 $('#video')[0].play();
             });
+            $('.loading .loading_btn').click(function() {
+                $('.loading').hide();
+                setTimeout(function(){
+                    animation($('.zhi1'),1)
+                            .then(function(){return animation($('.zhi2'),2) })
+                            .then(function(){return animation($('.zhi3'),3) })
+                            .then(function(){return animation($('.zhi4'),4) })
+                            .then(function(){return animation($('.zhi4'),5) })
+                            .then(function(){return animation($('.zhi4'),6) })
+                            .then(function() {
 
+                            })
+                },3000);
+            });
             $('.bottom_font.gif').click(function() {
                 $('.page1').removeClass('current').addClass('prev');
                 $('.page2').addClass('current');

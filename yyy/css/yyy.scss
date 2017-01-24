@@ -616,6 +616,51 @@ html,body{
   z-index: 1000;
   background-color: #ecdccc;
   opacity: 1;
+  text-align: center;
+  .loading_gif{
+    width: 80%;
+    margin: 7rem auto 0;
+    img {
+      width: 100%;
+    }
+  }
+  .progressBar {
+    position: relative;
+    width: 60%;
+    height:.5rem;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 1rem auto;
+    background-color: #f9f2ea;
+    .bar{
+      width: 100%;
+      border-radius: 4px;
+      height:.5rem;
+      position: absolute;
+      background-color: #bb2340;
+      z-index: 11;
+      transform: translate3d(-100%,0,0);
+      -webkit-transform:translate3d(-100%,0,0);
+    }
+  }
+  .loading_btn {
+    position: absolute;
+    bottom: 1rem;
+    width: 40%;
+    left: 50%;
+    margin-left: -20%;
+    opacity: 0;
+    img{
+      width:100%;
+    }
+    &.in{
+      opacity: 1;
+      -webkit-transition-duration:1500ms;
+      transition-duration: 1500ms;
+      -webkit-transform:translate3d(0,0,0) scale(1);
+      transform: translate3d(0,0,0) scale(1);
+    }
+  }
 }
 .page1{
   background-color: #f7f3e7;
