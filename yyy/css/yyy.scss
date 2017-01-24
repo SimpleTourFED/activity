@@ -842,10 +842,28 @@ html,body{
       width: 9rem;
       position: absolute;
       top: 13.5rem;
-      left: 0rem;
+      left: 0;
       z-index: 10;
       -webkit-animation:rotateFly4 ease-in .7s forwards;
       animation:rotateFly4 ease-in .7s forwards;
+    }
+    .zhi21.rotate{
+      width: 9rem;
+      position: absolute;
+      top: 21.5rem;
+      left: 0;
+      z-index: 10;
+      -webkit-animation:rotateFly1 ease-in .7s forwards;
+      animation:rotateFly1 ease-in .7s forwards;
+    }
+    .zhi22.rotate{
+      width: 9rem;
+      position: absolute;
+      top: 7.5rem;
+      left: 0;
+      z-index: 10;
+      -webkit-animation:rotateFly2 ease-in .7s forwards;
+      animation:rotateFly2 ease-in .7s forwards;
     }
   }
 }
