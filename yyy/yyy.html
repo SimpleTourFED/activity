@@ -48,6 +48,17 @@
                         <img src="/yyy/images/flyCard/zhi12.png" alt="" class="zhi12" />
                         <img src="/yyy/images/flyCard/zhi13.png" alt="" class="zhi13" />
                         <img src="/yyy/images/flyCard/zhi14.png" alt="" class="zhi14" />
+
+                        <img src="/yyy/images/flyCard/zhi5.png" alt="" class="zhi15" />
+                        <img src="/yyy/images/flyCard/zhi6.png" alt="" class="zhi16" />
+                        <img src="/yyy/images/flyCard/zhi7.png" alt="" class="zhi17" />
+                        <img src="/yyy/images/flyCard/zhi8.png" alt="" class="zhi18" />
+                        <img src="/yyy/images/flyCard/zhi9.png" alt="" class="zhi19" />
+                        <img src="/yyy/images/flyCard/zhi10.png" alt="" class="zhi20" />
+                        <!--<img src="/yyy/images/flyCard/zhi11.png" alt="" class="zhi11" />-->
+                        <!--<img src="/yyy/images/flyCard/zhi12.png" alt="" class="zhi12" />-->
+                        <!--<img src="/yyy/images/flyCard/zhi13.png" alt="" class="zhi13" />-->
+                        <!--<img src="/yyy/images/flyCard/zhi14.png" alt="" class="zhi14" />-->
                     </div>
                 </div>
             </div>
@@ -74,25 +85,81 @@
             </div>
         </div>
 
-        <div class="page page3">
+        <div class="page page3 ">
             <div class="page-content">
                 <img src="/yyy/images/page1-bg.png" class="bg">
                 <img src="/yyy/images/q-1.png" alt="" class="head">
                 <img src="/yyy/images/q-2.png" alt="" class="light breath">
                 <img src="/yyy/images/border.png" class="border">
-                <img src="/yyy/images/q-3.png" class="cloud1">
-                <img src="/yyy/images/q-4.png" class="cloud2">
-                <img src="/yyy/images/q-5.png" class="cloud3">
+                <img src="/yyy/images/q-3.png" class="cloud1 cloud">
+                <img src="/yyy/images/q-4.png" class="cloud2 cloud">
+                <img src="/yyy/images/q-5.png" class="cloud3 cloud">
             </div>
             <div style="position: absolute;bottom:0;left:0;right:0;">
-                <img src="/yyy/images/q-6.png" class="typewriter ">
+                <img src="/yyy/images/q-6.png" class="typewriter">
                 <img src="/yyy/images/q-7.png" class="left">
                 <img src="/yyy/images/q-7.png" class="right">
 
-                <div class="question">
+                <div class="question" id="question1" data-index="1">
                     <img src="/yyy/images/question1.png">
-                    <div class="color1"></div>
-                    <div class="color2"></div>
+                    <div class="color1 hide"></div>
+                    <div class="color2 hide"></div>
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </div>
+
+                <div class="question" id="question2" data-index="2">
+                    <img src="/yyy/images/question2.png">
+                    <div class="color1 hide"></div>
+                    <div class="color2 hide"></div>
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </div>
+
+                <div class="question" id="question3" data-index="3">
+                    <img src="/yyy/images/question3.png">
+                    <div class="color1 hide"></div>
+                    <div class="color2 hide"></div>
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </div>
+
+                <div class="question" id="question4" data-index="4">
+                    <img src="/yyy/images/question4.png">
+                    <div class="color1 hide"></div>
+                    <div class="color2 hide"></div>
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </div>
+
+                <div class="question" id="question5" data-index="5">
+                    <img src="/yyy/images/question5.png">
+                    <div class="color1 hide"></div>
+                    <div class="color2 hide"></div>
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </div>
+
+                <div class="question" id="question6" data-index="6">
+                    <img src="/yyy/images/question6.png">
+                    <div class="color1 hide"></div>
+                    <div class="color2 hide"></div>
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </div>
+
+                <div class="question" id="question7" data-index="7">
+                    <img src="/yyy/images/question7.png">
+                    <div class="color1 hide"></div>
+                    <div class="color2 hide"></div>
+                    <div class="first"></div>
+                    <div class="second"></div>
+                </div>
+
+                <div class="question" id="question8" data-index="8">
+                    <img src="/yyy/images/question8.png">
+                    <div class="color1 hide"></div>
+                    <div class="color2 hide"></div>
                     <div class="first"></div>
                     <div class="second"></div>
                 </div>
@@ -177,7 +244,7 @@
                         .then(function() {
 
                         })
-            },5000);
+            },3000);
 
             $('.bottom_font.gif').click(function() {
                 $('.page1').removeClass('current').addClass('prev');
@@ -185,6 +252,8 @@
                 setTimeout(function() {
                     $('.black_people').addClass('riseUp');
                     setTimeout(function() {
+                        $('.black_people').addClass('animationEnd');
+                        $('.bottom')[0].clientLeft;
                         $('.video_font').removeClass('out').addClass('in');
                         var $peopleCard = $('.people_card');
                         $peopleCard.eq(0).addClass('gradual');
@@ -196,8 +265,54 @@
                             $peopleCard.eq(3).addClass('gradual');
                             $peopleCard.eq(5).addClass('gradual');
                         },1000);
-                    },1100);
+                    },1000);
                 },700);
+            });
+
+            $('.page2 .bottom').click(function() {
+                $('.page2').removeClass('current').addClass('prev');
+                $('.page3').addClass('current');
+                setTimeout(function() {
+                    $('.typewriter').addClass('up');
+                    setTimeout(function() {
+                        $('.page3 .right').addClass('up');
+                        $('.page3 .left').addClass('up');
+                        $('.page3 #question1').addClass('up');
+                    },500);
+
+                },1000);
+            });
+
+            var count = 1;
+            function questionAnimation(index) {
+                $('.page3 .right').removeClass('exchange');
+                $('.page3 .left').removeClass('exchange');
+                setTimeout(function(){
+                    $('#question'+index).removeClass('up').addClass('down');
+                    $('.page3 .right').addClass('exchange');
+                    $('.page3 .left').addClass('exchange');
+                    setTimeout(function() {
+                        $('#question'+(+index+1)).addClass('up');
+                        count = 1;
+                    },500);
+                },500);
+            }
+
+            $('.question .first').click(function() {
+                if(count === 1) {
+                    var $question = $(this).parents('.question');
+                    $question.find('.color1').removeClass('hide');
+                    count++;
+                    questionAnimation($question.attr('data-index'));
+                }
+            });
+            $('.question .second').click(function() {
+                if(count === 1) {
+                    var $question = $(this).parents('.question');
+                    $question.find('.color2').removeClass('hide');
+                    count++;
+                    questionAnimation($question.attr('data-index'));
+                }
             });
         });
 
