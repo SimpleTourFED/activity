@@ -11,30 +11,9 @@
 </head>
 <body>
 <div class="pages">
-    <!--<div class="audio on"></div>-->
-    <!--<audio id="audio" autoplay="" loop="loop" style="display:none" controls="">-->
-    <!--<source src="http://www.w3school.com.cn/i/song.mp3" type="audio/mpeg">-->
-    <!--</audio>-->
-    <div class="page page2">
-        <div class="page2-content">
-            <img src="/yyy/images/page1-bg.png" class="bg">
-            <img src="/yyy/images/preVideo/black_people.png" class="black_people riseUp">
-            <img src="/yyy/images/border.png" class="border">
-            <img src="/yyy/images/preVideo/people_card1.png" alt="" class="people_card1">
-            <img src="/yyy/images/preVideo/people_card2.png" alt="" class="people_card2">
-            <img src="/yyy/images/preVideo/people_card3.png" alt="" class="people_card3">
-            <img src="/yyy/images/preVideo/people_card4.png" alt="" class="people_card4">
-            <img src="/yyy/images/preVideo/people_card5.png" alt="" class="people_card5">
-            <img src="/yyy/images/preVideo/people_card6.png" alt="" class="people_card6">
-            <img src="/yyy/images/preVideo/people_card7.png" alt="" class="people_card7">
-            <img src="/yyy/images/preVideo/video_font.png" class="video_font breathe">
-            <img src="/yyy/images/preVideo/play.gif" alt="" class="play_btn">
-            <div class="bottom">
-                <img src="/yyy/images/preVideo/skipVideo.png" class="bottom_font">
-            </div>
-            <!--<video style="position: absolute;z-index:100;" src="https://videos.simpletour.com/simpletour_year_mv.mov" controls="controls"></video>-->
-        </div>
-    </div>
+    <video style="background-color: rgb(0, 0, 0); width: 100%; height: 100%; display: none;" webkit-playsinline="" x-webkit-airplay="" id="video"  data-role="txp_video_tag" src="http://ugcbsy.qq.com/flv/194/40/s0371tner8y.p703.1.mp4?sdtfrom=v1010&amp;guid=af9e43d8595060c3114c1548ecc17d2f&amp;vkey=E1D10529BC8DDFAECFC7D6E544E919DA9BCD0C89958437D9613CDF75EC00CE13729D38E762579BB6DA148C8386E87C563121AF3694650265752EA098AA85D89CC9C059A8ABB632B24428ADA26A4994155310AE920B8D496098A7B25DA959FC862421048E039EEED494B8D483498CE6A7" class=""></video>
+
+    <button style="width: 100px;height:50px">asdasd</button>
 </div>
 <script src="/common/js/zepto.min.js"></script>
 <script>
@@ -59,7 +38,6 @@
         doc.addEventListener('DOMContentLoaded', recalc, false);
     })(document, window);
     $(document).ready(function() {
-        var Promise = window.Promise;
 
         var docWidth = $(document).width()-16;
         var docHeight = $(document).height()-16;
@@ -68,13 +46,10 @@
         }else{
             $(".page2-content").css({"height":docWidth*1170/723+'px',"width":docWidth+'px',top:(docHeight-docWidth*1170/723)/2+8+'px'})
         }
-
-        function riseUp() {
-            $('.black_people').removeClass('riseUp').addClass('wobble');
-        }
-        setTimeout(function() {
-            riseUp();
-        },1100);
+        $('button').click(function() {
+            var v = document.getElementById('video');
+            v.play();
+        });
     });
 
 </script>

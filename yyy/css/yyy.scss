@@ -42,10 +42,11 @@ $opacity: 1 !default;
   -moz-box-shadow:  $x $y $z $color;
 }
 #video{
-  display: none;
+  max-width: 100%;
   position: absolute;
+  display: none;
   bottom: 6rem;
-  z-index: 12;
+  z-index: 13;
   left: 50%;
   margin-left: -9%;
 }
@@ -599,11 +600,11 @@ html,body{
   right: 1.2rem;
   z-index: 100;
   &.off {
-    background: url(/yyy/images/music_on.png) no-repeat center;
+    background: url(https://images.simpletour.com/wechat/activity/myWay/music_on.png) no-repeat center;
     background-size: contain;
   }
   &.on{
-    background: url(/yyy/images/music_off.png) no-repeat center;
+    background: url(https://images.simpletour.com/wechat/activity/myWay/music_off.png) no-repeat center;
     background-size: contain;
   }
 }
@@ -613,6 +614,7 @@ html,body{
   left: 0;
   width: 100%;
   height: 100%;
+  min-height: 100%;
   z-index: 1000;
   background-color: #ecdccc;
   opacity: 1;
@@ -676,7 +678,7 @@ html,body{
       left: 0;
       width: 100%;
       height:100%;
-      background: url(/yyy/images/cover.png) no-repeat center;
+      background: url(https://images.simpletour.com/wechat/activity/myWay/cover.png) no-repeat center;
       z-index: 11;
       &.hide {
         display: none;
@@ -739,7 +741,7 @@ html,body{
     margin-left: -40%;
     bottom: -.5rem;
     z-index: 11;
-    background: url(/yyy/images/bottom_bg.png) no-repeat center;
+    background: url(https://images.simpletour.com/wechat/activity/myWay/bottom_bg.png) no-repeat center;
     background-size: contain;
     text-align: center;
     padding-top: 1rem;
@@ -778,20 +780,20 @@ html,body{
   .a-first{
     width: rem(158px);
     left:rem(40px);
-    background: url("/yyy/images/card1.png") repeat bottom  ;
+    background: url("https://images.simpletour.com/wechat/activity/myWay/card1.png") repeat bottom  ;
     background-size: rem(158px);
   }
   .a-second{
     width: rem(178px);
     left:50%;
     margin-left: rem(-89px);
-    background: url("/yyy/images/card2.png") repeat  bottom;
+    background: url("https://images.simpletour.com/wechat/activity/myWay/card2.png") repeat  bottom;
     background-size: rem(178px);
   }
   .a-third{
     width: rem(158px);
     right:rem(40px);
-    background: url("/yyy/images/card3.png") repeat  bottom ;
+    background: url("https://images.simpletour.com/wechat/activity/myWay/card3.png") repeat  bottom ;
     background-size: rem(158px);
   }
   .animation1{
@@ -1028,7 +1030,7 @@ html,body{
       left: 0;
       width: 100%;
       height:100%;
-      background: url(/yyy/images/cover.png) no-repeat center;
+      background: url(https://images.simpletour.com/wechat/activity/myWay/cover.png) no-repeat center;
       z-index: 11;
       &.hide {
         display: none;
@@ -1114,7 +1116,7 @@ html,body{
     margin-left: -30%;
     bottom: -.5rem;
     z-index: 11;
-    background: url(/yyy/images/preVideo/skipVideoBg.png) no-repeat center;
+    background: url(https://images.simpletour.com/wechat/activity/myWay/preVideo/skipVideoBg.png) no-repeat center;
     background-size: contain;
     text-align: center;
     padding-top: 1rem;
@@ -1272,18 +1274,18 @@ html,body{
   .dui_icon {
     position: absolute;
     width: 16%;
-    bottom: 12rem;
+    bottom: 10rem;
     z-index: 11;
     left: 50%;
     margin-left: -8%;
   }
   .font_dui{
     position: absolute;
-    width: 70%;
-    bottom: 5rem;
+    width: 60%;
+    bottom: 4rem;
     z-index: 11;
     left: 50%;
-    margin-left: -35%;
+    margin-left: -30%;
     opacity: 0;
     &.in{
       opacity: 1;
