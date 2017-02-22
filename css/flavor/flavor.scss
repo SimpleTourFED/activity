@@ -207,17 +207,17 @@
                 }
               }
               .right{
-                  a{
-                    width: rem(130px);
-                    height: rem(50px);
-                    display: block;
-                    text-align: center;
-                    line-height: rem(50px);
-                    background-color: #e80f33;
-                    color: #fff;
-                    margin: 0 rem(10px);
-                    @include border-radius(8px);
-                  }
+                a{
+                  width: rem(130px);
+                  height: rem(50px);
+                  display: block;
+                  text-align: center;
+                  line-height: rem(50px);
+                  background-color: #e80f33;
+                  color: #fff;
+                  margin: 0 rem(10px);
+                  @include border-radius(8px);
+                }
               }
             }
           }
